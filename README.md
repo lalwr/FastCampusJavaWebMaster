@@ -23,3 +23,14 @@
 과제 제출
 -------------
 * github계정 입력 시트 : https://goo.gl/Aa9Fzx
+
+과제
+-------------
+* 2018-03-19 
+ 1. 알고리즘 Big-O개념 정리하여 공유하기
+ 2. 03-21일까지 Git Hub 계정 연동하기 : https://www.slideshare.net/flyskykr/github-46014813
+
+
+관령 링크
+-------------
+* git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813
