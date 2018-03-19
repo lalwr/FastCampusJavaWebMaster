@@ -28,8 +28,9 @@
 -------------
 * 2018-03-19 
  1. 알고리즘 Big-O개념 정리하여 공유하기
- 2. 03-21일까지 Git Hub 계정 연동하기 : https://www.slideshare.net/flyskykr/github-46014813
-
+ 2. 3월 21일까지 Git Hub 계정 연동하기 : https://www.slideshare.net/flyskykr/github-46014813
+ 3. Web 어플리케이션 구조
+ 4. 서블릿 구조 (가능하면 만들어보기)
 
 관령 링크
 -------------
