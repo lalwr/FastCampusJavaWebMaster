@@ -31,7 +31,8 @@
  2. 3월 21일까지 Git Hub 계정 연동하기 : https://www.slideshare.net/flyskykr/github-46014813
  3. Web 어플리케이션 구조
  4. 서블릿 구조 (가능하면 만들어보기)
+ 5. JAVA 관련 정리글 읽어보기 : https://steemkr.com/kr/@woojin.joe/java-01-class
 
-관령 링크
+관련 링크
 -------------
 * git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813
