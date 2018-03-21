@@ -1,16 +1,17 @@
-package example;
+package exam;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet(name = "HelloServlet", urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
-
+    
     @Override
-
     public void init() throws ServletException {
         //서블릿의 생명 주기중에 현재 서블릿이 초기화 작업을 시키기 위해서 오버라이딩해서 사용함.
         //딱 한번만. 실행된다. 전체 초기화 작업같은 일에 사용될 수 있다.
@@ -20,7 +21,7 @@ public class HelloServlet extends HttpServlet {
 
     // 컨테이너가 생성한 Request와 Response 객체를 전달 받는다.
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html; charset=UTF-8");
 
         // Response 객체의 PrintWriter를 사용해 브라우저에 HTML을 출력한다.
@@ -36,7 +37,7 @@ public class HelloServlet extends HttpServlet {
 
     // 컨테이너가 생성한 Request와 Response 객체를 전달 받는다.
     @Override
-    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html; charset=UTF-8");
 
         // Response 객체의 PrintWriter를 사용해 브라우저에 HTML을 출력한다.
@@ -51,7 +52,7 @@ public class HelloServlet extends HttpServlet {
     }
 
     @Override
-    public void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html; charset=UTF-8");
 
         // Response 객체의 PrintWriter를 사용해 브라우저에 HTML을 출력한다.
@@ -71,5 +72,4 @@ public class HelloServlet extends HttpServlet {
         System.out.println("destroy 호출");
 
     }
-
 }

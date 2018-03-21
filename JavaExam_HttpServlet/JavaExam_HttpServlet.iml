@@ -11,7 +11,7 @@
         </webroots>
       </configuration>
       <facet type="webservices" name="WebServices">
-        <configuration ws.engine="Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" />
+        <configuration ws.engine="Apache Axis" />
       </facet>
     </facet>
   </component>
@@ -22,6 +22,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="JAX-WS-Apache Axis" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.33" level="application_server_libraries" />
   </component>
 </module>
