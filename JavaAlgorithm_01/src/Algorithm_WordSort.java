@@ -15,7 +15,7 @@ public class Algorithm_WordSort {
             hs.add(sc.nextLine());
         }
 
-        int size = hs.size()
+        int size = hs.size();
         String[] wordArray = new String[size];
         hs.toArray(wordArray);
 
@@ -26,7 +26,7 @@ public class Algorithm_WordSort {
         });
 
         for(int i=0; i<size; i++){
-            
+
         }
 
         Arrays.sort(wordArray);
