@@ -28,6 +28,20 @@
  4. 서블릿 구조 (가능하면 만들어보기)
  5. JAVA 관련 정리글 읽어보기 : https://steemkr.com/kr/@woojin.joe/java-01-class
 
+* 2018-03-20 
+ 1. 과제 블로그 정리
+ 2. 깃허브 블로그 개설
+ 
+* 2018-03-21 
+ 1. 과제 블로그 정리
+ 2. 알고리즘 스터디 개설
+ 
+* 2018-03-22
+ 1. maven 설치
+ 2. maven사용방법 학습
+ 3. 웹 어플리케이션 구조 조사하기
+ 4. Servlet작성과 실행 (maven 플러그인으로 was실행)
+ 
 관련 링크
 -------------
 * git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813
