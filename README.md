@@ -60,7 +60,11 @@
  2. maven사용방법 학습
  3. 웹 어플리케이션 구조 조사하기
  4. Servlet작성과 실행 (maven 플러그인으로 was실행)
- 
+
+* 2018-03-22
+  1. spring boot 프로젝트 예제
+  2. maven 프로젝트
+  
 관련 링크
 -------------
 * git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813

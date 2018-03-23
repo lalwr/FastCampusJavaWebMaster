@@ -1,5 +1,10 @@
 package examples;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -10,7 +15,56 @@ public class WASMain {
             listener = new ServerSocket(8080);
             System.out.println("cliend를 기다립니다.");
             Socket client = listener.accept(); // 블러킹 메소드.
-            System.out.println("접속한 cliend : " + client.toString());
+            System.out.println("접속한 client : " + client.toString());
+
+            InputStream in = client.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
+
+            String line = null;
+            HttpRequest request = new HttpRequest();
+            line = br.readLine();
+            String[] firstLineArgs = line.split("\\s");
+            request.setMethod(firstLineArgs[0]);
+            request.setPath(firstLineArgs[1]);
+
+
+            while((line = br.readLine()) != null){
+                if("".equals(line)){ //헤더를 읽고 빈줄을 만나면 종료
+                    break;
+                }
+                String[] headerArray = line.split("\\s");
+                if(headerArray[0].startsWith("Host:")){
+                    request.setHost(headerArray[1]);
+                }else if(headerArray[0].startsWith("Content-Length:")){
+                    int length = Integer.parseInt(headerArray[1].trim());
+                    request.setContentLength(length);
+                }else if(headerArray[0].startsWith("User-Agent:")){
+                    request.setUserAgent(line.substring(12));
+                }else if(headerArray[0].startsWith("Content-Type:")){
+                    request.setContentType(headerArray[1].trim());
+                }
+            }
+
+            System.out.println(request);
+
+            //한줄씩 읽어서 출력
+            /*String line = null;
+            while((line = br.readLine()) != null){
+                if("".equals(line)){ //헤더를 읽고 빈줄을 만나면 종료
+                    break;
+                }
+                System.out.println(line);
+            }*/
+
+            //한번에 읽어서 출력
+            /*byte[] buffer = new byte[1024];
+            int count = 0;
+            while((count = in.read(buffer)) != -1){
+                System.out.write(buffer, 0 ,count);
+            }*/
+            in.close();
+            client.close(); // 클라이언트와 접속이 close 된다.
+
         }catch (Exception ex){
             ex.printStackTrace();
         }finally { // finatlly부분에서 서버소켓을 close한다.
@@ -20,3 +74,28 @@ public class WASMain {
         }
     }
 }
+
+// mini was 만들기
+// 브라우저로 접속시 브라우저가 보내주는 정보를 출력하면??
+
+//GET /hello/world HTTP/1.1
+//Host: localhost:8080
+//Connection: keep-alive
+//Cache-Control: max-age=0
+//Upgrade-Insecure-Requests: 1
+//User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36
+//Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+//Accept-Encoding: gzip, deflate, br
+//Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+
+//POST / HTTP/1.1
+//Host: localhost:8080
+//Connection: keep-alive
+//Content-Length: 11
+//Origin: chrome-extension://aejoelaoggembcahagimdiliamlcdmfm
+//User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36
+//Content-Type: text/plain
+//Accept: */*
+
+// 구글 웹스토어 접속후 Restlet 검색하여
+// Restlet Client - REST API Testing 설치 (postman과 비슷한 프로그램)
