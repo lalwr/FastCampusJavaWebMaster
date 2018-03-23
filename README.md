@@ -13,14 +13,22 @@
 
 수업 목표
 -------------
-* 알고리즘 풀기(1일 1문제 또는 주 4~5문제 이상)
+* 알고리즘 풀기
   * 하루 1~2시간 공부하기(Big-O개념등등 숙지)
   * 정렬, 검색관련 알고리즘 숙지
-* 개인 학습 하여 나만의 방식으로 블로그 정리 하기
+* 나만의 방식으로 블로그 정리 하기
 * gitHub에 1일 1 commit 하기
-* 다른사람들과 스터디 하기
-* 프로그램 과재 개발 해보기
-* Coc 개념 공부
+
+블로그 정리
+-------------
+|  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
+|:--------|:--------:|--------:|
+| algorithm | <center> [Big-O개념](http://lalwr.blogspot.com/2018/03/big-o_20.html) </center> | <center>18.03.20 </center> |
+| Web application | <center> [Web application 개념](https://lalwr.blogspot.kr/2018/03/blog-post.html) </center> | <center>18.03.20 </center> |
+| Servlet | <center> [Servlet 개념](https://lalwr.blogspot.kr/2018/03/blog-post_20.html) </center> | <center>18.03.22 </center> |
+| maven, jdk | <center> [maven, jdk 설정](https://lalwr.blogspot.kr/2018/03/intellij-maven-jdk.html) </center> | <center>18.03.22 </center> |
+| maven, Servlet | <center> [maven Servlet 프로젝트 Tomcat 구동](https://lalwr.blogspot.kr/2018/03/mac-intellij-maven-servlet-tomcat.html) </center> | <center>18.03.22 </center> |
+| SPRING | <center> [SPRING INITIALIZR 프로젝트](https://lalwr.blogspot.kr/2018/03/mac-intellij-spring-initializr.html) </center> | <center>18.03.23 </center> |
 
 과제
 -------------
@@ -44,7 +52,7 @@
  2. maven사용방법 학습
  3. 웹 어플리케이션 구조 조사하기
  4. Servlet작성과 실행 (maven 플러그인으로 was실행)
-
+ 
 관련 링크
 -------------
 * git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813
