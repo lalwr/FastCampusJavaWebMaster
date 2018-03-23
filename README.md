@@ -73,11 +73,9 @@
  4. Servlet작성과 실행 -> maven 플러그인으로 was실행
 
 * 2018-03-23
- 1. spring boot Project
- 2. mini was Project
- 3. mini was (404기능 추가 및 재구현 해보기) 
- 4. socket 통신
- 5. 블로킹 메소드란?  
+ 1. mini was (404기능 추가 및 재구현 해보기)  
+ 2. Http 통신 과정 및 개념
+ 3. 블로킹 메소드 개념  
    
   
 관련 링크
