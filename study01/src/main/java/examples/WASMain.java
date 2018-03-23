@@ -65,9 +65,12 @@ public class WASMain {
         System.out.println(request);
 
         String baseDir = "/tmp/wasroot";
-        String fileName = request.getPath(); //
+        String fileName = request.getPath();
+
         if("/".equals(fileName)){
             fileName = "/index.html";
+        }else{
+            fileName = "/error.html";
         }
         fileName = baseDir + fileName;
 
@@ -80,17 +83,20 @@ public class WASMain {
         long fileLength = file.length();
 
         if(file.isFile()){
+            pw.println("HTTP/1.1 200 OK");
+            pw.println("Content-Type: " + contentType);
+            pw.println("Content-Length: " + fileLength);
+            pw.println();
+
 
         }else{
-
+            pw.println("HTTP/1.1 404 OK");
+            pw.println("Content-Type: " + contentType);
+            pw.println("Content-Length: " + fileLength);
+            pw.println();
         }
 
-
-        pw.println("HTTP/1.1 200 OK");
-        pw.println("Content-Type: " + contentType);
-        pw.println("Content-Length: " + fileLength);
-        pw.println();
-        pw.flush(); // 헤더와 빈줄을 출력
+        pw.flush(); // 헤더와 빈줄을 char 출력
 
         FileInputStream fis = new FileInputStream(file);
         byte[] buffer = new byte[1024];
@@ -99,6 +105,7 @@ public class WASMain {
             out.write(buffer,0,readCount);
         }
         out.flush();
+
 
         out.close();
         in.close();
