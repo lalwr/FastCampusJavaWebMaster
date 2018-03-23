@@ -1,39 +1,40 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
-import java.util.Scanner;
 
+//https://www.acmicpc.net/problem/1181
 public class Algorithm_WordSort {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        int i, j, n = Integer.parseInt(in.readLine()), len, tmp, size;
 
-        int count = Integer.parseInt(sc.nextLine());
-        String array[] = new String[count];
+        HashSet<String> hs = new HashSet<>(); //순서 상관없이 중복 제거하여 저장
+        for(i=0;i<n;i++) hs.add(in.readLine()); //한줄씩 읽어서 저장
 
-        HashSet hs = new HashSet();
-        for(int i =0; i < count; i++){
-            hs.add(sc.nextLine());
-        }
+        size = hs.size();
+        String arr[] = new String[size];
+        hs.toArray(arr); //array 형태로 변환
 
-        int size = hs.size();
-        String[] wordArray = new String[size];
-        hs.toArray(wordArray);
-
-        Arrays.sort(wordArray, new Comparator<String>() {
-            public int compare(String o1, String o2) {
-                return Integer.compare(o1.length(), o2.length());
+        Arrays.sort(arr, new Comparator<String>(){ //길이순으로 문자 정렬
+            public int compare(String s1, String s2){
+                return Integer.compare(s1.length(), s2.length());
             }
         });
 
-        for(int i=0; i<size; i++){
-
+        for(i=0;i<size;i++){ //문자 길이별 사전순 정렬
+            len = arr[i].length();
+            for(j=i+1;j<size;j++){
+                tmp = arr[j].length();
+                if(len != tmp) break;
+            }
+            Arrays.sort(arr, i, j);
+            i = j-1;
         }
 
-        Arrays.sort(wordArray);
-
-        for(int i =0; i < wordArray.length; i++){
-            System.out.println(wordArray[i]);
-        }
+        for(i=0;i<size;i++) System.out.println(arr[i]);
+        in.close();
 
     }
 }
