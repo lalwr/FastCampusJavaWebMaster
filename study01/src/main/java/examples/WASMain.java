@@ -1,9 +1,6 @@
 package examples;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,6 +13,9 @@ public class WASMain {
             System.out.println("cliend를 기다립니다.");
             Socket client = listener.accept(); // 블러킹 메소드.
             System.out.println("접속한 client : " + client.toString());
+
+            OutputStream out = client.getOutputStream();
+            PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 
             InputStream in = client.getInputStream();
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
@@ -47,6 +47,15 @@ public class WASMain {
 
             System.out.println(request);
 
+            String body = "<h1>Hello World</h1>";
+            pw.println("HTTP/1.1 200 OK");
+            pw.println("Content-Type: text/html; charset=UTF-8");
+            pw.println("Content-Length:" + body.length());
+            pw.println();
+            pw.write(body);
+            pw.flush(); // flush를 해야된다. : 데이터를 클라이언트에게 전달
+            out.close();
+
             //한줄씩 읽어서 출력
             /*String line = null;
             while((line = br.readLine()) != null){
@@ -62,6 +71,8 @@ public class WASMain {
             while((count = in.read(buffer)) != -1){
                 System.out.write(buffer, 0 ,count);
             }*/
+
+
             in.close();
             client.close(); // 클라이언트와 접속이 close 된다.
 
