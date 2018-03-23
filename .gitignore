@@ -92,6 +92,9 @@ tmp/**/*
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
+# ignore
+*.iml
+
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
