@@ -19,6 +19,14 @@
 * 나만의 방식으로 블로그 정리 하기
 * gitHub에 1일 1 commit 하기
 
+알고리즘 스터디 내역
+-------------
+* 1회차(2018-03-21) 
+ 1. 알고리즘 공부 방향 의견 수립
+ 
+* 2회차(2018-03-29) 
+ 1. 문제 공유
+
 블로그 정리
 -------------
 |  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
