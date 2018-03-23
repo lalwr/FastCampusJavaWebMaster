@@ -5,7 +5,7 @@
 -------------
 * 2018.03.19 ~ 06.08
 
-공부 목록
+공부 목록 순서
 -------------
 * Class
 * Interface
@@ -27,6 +27,10 @@
   * 정렬, 검색관련 알고리즘 숙지
 * 나만의 방식으로 블로그 정리 하기
 * gitHub에 1일 1 commit 하기
+* JAVA 8 문법 숙지
+* SPRING 4 project 
+* SPRING 4 project 및 SPRING Boot 2.0 project
+
 
 알고리즘 스터디 내역
 -------------
