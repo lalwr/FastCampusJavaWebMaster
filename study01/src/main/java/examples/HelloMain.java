@@ -39,3 +39,5 @@ public class HelloMain {
 
 // Hello100 h100 = new Hello100();
 // Hello + 100 h100 = new Hello + 100();
+
+//Httpservlet 구현하기 위해서

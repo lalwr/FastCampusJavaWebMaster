@@ -1,88 +1,108 @@
 package examples;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class WASMain {
-    public static void main(String[] args) {
-        ServerSocket listener = null; //특정 포켓에서 기다리고 있는 서버
+    public static void main(String[] args){
+        ServerSocket listener = null;
         try{
             listener = new ServerSocket(8080);
-            System.out.println("cliend를 기다립니다.");
-            Socket client = listener.accept(); // 블러킹 메소드.
-            System.out.println("접속한 client : " + client.toString());
+            System.out.println("client를 기다립니다.");
+            while(true) {
+                Socket client = listener.accept(); // 블러킹 메소드.
 
-            OutputStream out = client.getOutputStream();
-            PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
+//            System.out.println("접속한 client : " + client.toString());
 
-            InputStream in = client.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(in));
-
-            String line = null;
-            HttpRequest request = new HttpRequest();
-            line = br.readLine();
-            String[] firstLineArgs = line.split("\\s");
-            request.setMethod(firstLineArgs[0]);
-            request.setPath(firstLineArgs[1]);
-
-
-            while((line = br.readLine()) != null){
-                if("".equals(line)){ //헤더를 읽고 빈줄을 만나면 종료
-                    break;
-                }
-                String[] headerArray = line.split("\\s");
-                if(headerArray[0].startsWith("Host:")){
-                    request.setHost(headerArray[1]);
-                }else if(headerArray[0].startsWith("Content-Length:")){
-                    int length = Integer.parseInt(headerArray[1].trim());
-                    request.setContentLength(length);
-                }else if(headerArray[0].startsWith("User-Agent:")){
-                    request.setUserAgent(line.substring(12));
-                }else if(headerArray[0].startsWith("Content-Type:")){
-                    request.setContentType(headerArray[1].trim());
-                }
+                new Thread(() -> {
+                    try {
+                        handleSocket(client);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }).start();
             }
 
-            System.out.println(request);
-
-            String body = "<h1>Hello World</h1>";
-            pw.println("HTTP/1.1 200 OK");
-            pw.println("Content-Type: text/html; charset=UTF-8");
-            pw.println("Content-Length:" + body.length());
-            pw.println();
-            pw.write(body);
-            pw.flush(); // flush를 해야된다. : 데이터를 클라이언트에게 전달
-            out.close();
-
-            //한줄씩 읽어서 출력
-            /*String line = null;
-            while((line = br.readLine()) != null){
-                if("".equals(line)){ //헤더를 읽고 빈줄을 만나면 종료
-                    break;
-                }
-                System.out.println(line);
-            }*/
-
-            //한번에 읽어서 출력
-            /*byte[] buffer = new byte[1024];
-            int count = 0;
-            while((count = in.read(buffer)) != -1){
-                System.out.write(buffer, 0 ,count);
-            }*/
-
-
-            in.close();
-            client.close(); // 클라이언트와 접속이 close 된다.
-
-        }catch (Exception ex){
+        }catch(Exception ex){
             ex.printStackTrace();
-        }finally { // finatlly부분에서 서버소켓을 close한다.
-            try{
+        }finally { // finally부분에서 서버소켓을 close한다.
+            try {
                 listener.close();
-            }catch (Exception e){};
+            }catch(Exception e){}
         }
+    }
+
+    private static void handleSocket(Socket client) throws IOException {
+        OutputStream out = client.getOutputStream();
+        PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
+
+        InputStream in = client.getInputStream();
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
+        String line = null;
+        HttpRequest request = new HttpRequest();
+        line = br.readLine();
+        String[] firstLineArgs = line.split(" ");
+        request.setMethod(firstLineArgs[0]);
+        request.setPath(firstLineArgs[1]);
+
+        while((line = br.readLine()) != null){
+            if("".equals(line)){ // 헤더를 읽고 빈줄을 만나면
+                break;
+            }
+            String[] headerArray = line.split(" ");
+            if(headerArray[0].startsWith("Host:")){
+                request.setHost(headerArray[1].trim());
+            }else if(headerArray[0].startsWith("Content-Length:")){
+                int length = Integer.parseInt(headerArray[1].trim());
+                request.setContentLength(length);
+            }else if(headerArray[0].startsWith("User-Agent:")){
+                request.setUserAgent(line.substring(12));
+            }else if(headerArray[0].startsWith("Content-Type:")){
+                request.setContentType(headerArray[1].trim());
+            }
+        }
+        System.out.println(request);
+
+        String baseDir = "/tmp/wasroot";
+        String fileName = request.getPath(); //
+        if("/".equals(fileName)){
+            fileName = "/index.html";
+        }
+        fileName = baseDir + fileName;
+
+        String contentType = "text/html; charset=UTF-8";
+        if(fileName.endsWith(".png")){
+            contentType =  "image/png";
+        }
+
+        File file = new File(fileName); // java.io.File
+        long fileLength = file.length();
+
+        if(file.isFile()){
+
+        }else{
+
+        }
+
+
+        pw.println("HTTP/1.1 200 OK");
+        pw.println("Content-Type: " + contentType);
+        pw.println("Content-Length: " + fileLength);
+        pw.println();
+        pw.flush(); // 헤더와 빈줄을 출력
+
+        FileInputStream fis = new FileInputStream(file);
+        byte[] buffer = new byte[1024];
+        int readCount = 0;
+        while((readCount = fis.read(buffer)) != -1){
+            out.write(buffer,0,readCount);
+        }
+        out.flush();
+
+        out.close();
+        in.close();
+        client.close(); // 클라이언트와 접속이 close된다.
     }
 }
 

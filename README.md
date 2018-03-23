@@ -5,6 +5,15 @@
 -------------
 * 2018.03.19 ~ 06.08
 
+공부 목록
+-------------
+* Class
+* Interface
+* generics
+* lamda, Stream
+* thread
+* Tomcat구조(그림)
+
 수업 시간
 -------------
 * 매주 월, 금 : 10:00 ~ 17:00 / 수업 진행
@@ -37,6 +46,7 @@
 | maven, jdk | <center> [maven, jdk 설정](https://lalwr.blogspot.kr/2018/03/intellij-maven-jdk.html) </center> | <center>18.03.22 </center> |
 | maven, Servlet | <center> [maven Servlet 프로젝트 Tomcat 구동](https://lalwr.blogspot.kr/2018/03/mac-intellij-maven-servlet-tomcat.html) </center> | <center>18.03.22 </center> |
 | SPRING | <center> [SPRING INITIALIZR 프로젝트](https://lalwr.blogspot.kr/2018/03/mac-intellij-spring-initializr.html) </center> | <center>18.03.23 </center> |
+| WAS | <center> [mini was 프로젝트 ](https://github.com/lalwr/FastCampusJavaWebMaster/tree/master/study01) </center> | <center>18.03.23 </center> |
 
 과제
 -------------
@@ -62,8 +72,15 @@
  4. Servlet작성과 실행 (maven 플러그인으로 was실행)
 
 * 2018-03-22
-  1. spring boot 프로젝트 예제
+  1. spring boot Project
   2. maven 프로젝트
+
+* 2018-03-23
+  1. mini was Project
+  2. mini was (404기능 추가 및 재구현 해보기) 
+  3. socket 통신
+  4. 블로킹 메소드란?  
+   
   
 관련 링크
 -------------
