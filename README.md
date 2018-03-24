@@ -43,6 +43,7 @@
  * Big-O 
     1. https://youtu.be/6Iq5iMCVsXA
     2. https://youtu.be/Y7KTRu6-XK0
+    3. https://www.youtube.com/watch?v=OVRLHJC95Gs&t=2s
 
 * 1회차(2018-03-21) 
  1. 알고리즘 공부 방향 의견 수립
