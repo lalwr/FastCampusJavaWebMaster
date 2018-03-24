@@ -76,7 +76,7 @@
 | Servlet | <center> [다수의 인스턴스 구현하기](https://github.com/lalwr/FastCampusJavaWebMaster/blob/master/study01/src/main/java/examples/HelloMain.java) </center> | <center>18.03.22 </center> |
 | WAS | <center> [mini was 프로젝트 ](https://lalwr.blogspot.kr/2018/03/java-mini-was.html) </center> | <center>18.03.23 </center> |
 | Network | <center> [Blocking 과 NonBlocking](https://lalwr.blogspot.kr/2018/03/blocking-nonblocking.html) </center> | <center>18.03.24 </center> |
-| JAVA | <center> [char, String 형식 입출력](hhttps://lalwr.blogspot.kr/2018/03/java-char-string.html) </center> | <center>18.03.24 </center> |
+| JAVA | <center> [char, String 형식 입출력](https://lalwr.blogspot.kr/2018/03/java-char-string.html) </center> | <center>18.03.24 </center> |
 
 
 과제
