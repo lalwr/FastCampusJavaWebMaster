@@ -59,7 +59,7 @@
 수업 내용 요약
 -------------
 |  <center>회차</center> |  
-|:--------|:--------:|--------:|
+|:--------|
 | [1회차](https://lalwr.blogspot.kr/2018/03/java-1.html) </center>  |
 | [2회차](https://lalwr.blogspot.kr/2018/03/java-2.html) </center>  |
 
