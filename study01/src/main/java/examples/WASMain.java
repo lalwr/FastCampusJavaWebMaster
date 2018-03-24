@@ -1,5 +1,6 @@
 package examples;
 
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -67,6 +68,8 @@ public class WASMain {
 
         if("/".equals(fileName)){
             fileName = "/index.html";
+        }else if(fileName.endsWith(".png")){
+            fileName = request.getPath();
         }else{
             fileName = "/error.html";
         }
