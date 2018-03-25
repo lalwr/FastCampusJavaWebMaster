@@ -93,8 +93,10 @@
  1. mini was (404기능 추가 및 재구현 해보기)  
  2. 클라이언트와 서버의 통신 흐름 (get, post)
  3. 블로킹 메소드 개념  
-   
+    
   
 관련 링크
 -------------
-* git Hub 실습 교육 : https://www.slideshare.net/flyskykr/github-46014813
+* Github Flavored Markdown(GFM)
+ 1. [Writing on GitHub](https://help.github.com/categories/writing-on-github/)
+ 2. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/index.html)
