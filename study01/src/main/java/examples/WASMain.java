@@ -1,5 +1,6 @@
 package examples;
 
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,9 +13,7 @@ public class WASMain {
             System.out.println("client를 기다립니다.");
             while(true) {
                 Socket client = listener.accept(); // 블러킹 메소드.
-
-//            System.out.println("접속한 client : " + client.toString());
-
+                System.out.println(client);
                 new Thread(() -> {
                     try {
                         handleSocket(client);
@@ -34,10 +33,10 @@ public class WASMain {
     }
 
     private static void handleSocket(Socket client) throws IOException {
-        OutputStream out = client.getOutputStream();
+        OutputStream out = client.getOutputStream(); //클라이언트에게 데이터를 보내기 위한 작업
         PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 
-        InputStream in = client.getInputStream();
+        InputStream in = client.getInputStream(); //클라이언트에게서 받은 데이터를 처리를 위한 작업
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         String line = null;
         HttpRequest request = new HttpRequest();
@@ -69,6 +68,8 @@ public class WASMain {
 
         if("/".equals(fileName)){
             fileName = "/index.html";
+        }else if(fileName.endsWith(".png")){
+            fileName = request.getPath();
         }else{
             fileName = "/error.html";
         }
@@ -87,8 +88,6 @@ public class WASMain {
             pw.println("Content-Type: " + contentType);
             pw.println("Content-Length: " + fileLength);
             pw.println();
-
-
         }else{
             pw.println("HTTP/1.1 404 OK");
             pw.println("Content-Type: " + contentType);
@@ -96,7 +95,7 @@ public class WASMain {
             pw.println();
         }
 
-        pw.flush(); // 헤더와 빈줄을 char 출력
+        pw.flush(); // 헤더와 빈줄을 char형식으로 출력
 
         FileInputStream fis = new FileInputStream(file);
         byte[] buffer = new byte[1024];

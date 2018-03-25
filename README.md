@@ -38,7 +38,12 @@
  * 주 3~4회 이상 문제 풀기
  * 매주 수요일 알고리즘 풀이 설명 및 리뷰
  * 스터디 전날까지 GitHub에 소스 업로드 하기
-  
+ 
+* 관련 링크
+ * Big-O 
+    1. https://youtu.be/6Iq5iMCVsXA
+    2. https://youtu.be/Y7KTRu6-XK0
+    3. https://www.youtube.com/watch?v=OVRLHJC95Gs&t=2s
 
 * 1회차(2018-03-21) 
  1. 알고리즘 공부 방향 의견 수립
@@ -51,7 +56,13 @@
  2. 2회차 문제 링크
     1. 피보나치 수 : https://www.acmicpc.net/problem/1978
     2. 소수찾기 : https://www.acmicpc.net/problem/2747
-    
+
+수업 내용 요약
+-------------
+|  <center>회차</center> |
+|:--------|
+| <center>[1회차](https://lalwr.blogspot.kr/2018/03/java-1.html) </center>  |
+| <center>[2회차](https://lalwr.blogspot.kr/2018/03/java-2.html) </center>  |
 
 블로그 정리
 -------------
@@ -64,7 +75,10 @@
 | maven, Servlet | <center> [maven Servlet 프로젝트 Tomcat 구동](https://lalwr.blogspot.kr/2018/03/mac-intellij-maven-servlet-tomcat.html) </center> | <center>18.03.22 </center> |
 | SPRING | <center> [SPRING INITIALIZR 프로젝트](https://lalwr.blogspot.kr/2018/03/mac-intellij-spring-initializr.html) </center> | <center>18.03.23 </center> |
 | Servlet | <center> [다수의 인스턴스 구현하기](https://github.com/lalwr/FastCampusJavaWebMaster/blob/master/study01/src/main/java/examples/HelloMain.java) </center> | <center>18.03.22 </center> |
-| WAS | <center> [mini was 프로젝트 ](https://github.com/lalwr/FastCampusJavaWebMaster/blob/master/study01/src/main/java/examples/WASMain.java) </center> | <center>18.03.23 </center> |
+| WAS | <center> [mini was 프로젝트 ](https://lalwr.blogspot.kr/2018/03/java-mini-was_24.html) </center> | <center>18.03.23 </center> |
+| Network | <center> [Blocking 과 NonBlocking](https://lalwr.blogspot.kr/2018/03/blocking-nonblocking.html) </center> | <center>18.03.24 </center> |
+| JAVA | <center> [char, String 형식 입출력](https://lalwr.blogspot.kr/2018/03/java-char-string.html) </center> | <center>18.03.24 </center> |
+
 
 과제
 -------------
