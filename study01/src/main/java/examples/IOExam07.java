@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 직렬화를 실제 수행하는 클래스는 ObjectOutputStream, ObjectInputStream
-public class IOExam08 {
+public class IOExam07 {
     public static void main(String[] args) throws Exception {
         List<MyData> list = new ArrayList<>();
         MyData myData = new MyData();
@@ -13,28 +13,31 @@ public class IOExam08 {
         myData.setAge(50);
         list.add(myData);
 
-        List<MyData> list2 = (List)ObjectCopyUtil.copy(list);
+        FileOutputStream fos = new FileOutputStream("mydata.dat");
+        DataOutputStream dos = new DataOutputStream(fos);
+
+        dos.writeInt(list.size());
+        for(int i = 0; i < list.size(); i++){
+            dos.writeUTF(myData.getName());
+            dos.writeInt(myData.getAge());
+        }
+        dos.close();
+
+        FileInputStream fis = new FileInputStream("mydata.dat");
+        DataInputStream dis = new DataInputStream(fis);
+        int size = dis.readInt();
+        List<MyData> list2 = new ArrayList<>();
+        for(int i = 0; i < size; i++){
+            String name = dis.readUTF();
+            int age = dis.readInt();
+            MyData data = new MyData();
+            data.setName(name);
+            data.setAge(age);
+            list2.add(data);
+        }
+        dis.close();
+
         System.out.println(list2.size());
-    }
-
-
-}
-
-class ObjectCopyUtil{
-    public static Object copy(Object obj) throws Exception{
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(baos);
-
-        oos.writeObject(obj);
-
-        oos.close();
-
-//        byte[] memory = baos.toByteArray();
-
-        ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-        ObjectInputStream ois = new ObjectInputStream(bais);
-        Object result = ois.readObject();
-        ois.close();
-        return result;
+        System.out.println(list2.get(0).getName());
     }
 }
