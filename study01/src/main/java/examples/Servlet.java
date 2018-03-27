@@ -20,12 +20,12 @@ public abstract class Servlet {
     }
 
     public void doGet(
-                      HttpRequest request, HttpResponse response) {
+            HttpRequest request, HttpResponse response) {
 
     }
 
     public void doPost(
-                       HttpRequest request, HttpResponse response) {
+            HttpRequest request, HttpResponse response) {
 
     }
 }

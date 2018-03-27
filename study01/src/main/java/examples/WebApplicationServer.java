@@ -3,18 +3,59 @@ package examples;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
 
 public class WebApplicationServer implements Runnable{
     private int port;
     private DefaultServlet defaultServlet;
+    private Map<String, RequestMapping> map;
 
     public WebApplicationServer(int port) {
         this.port = port;
         defaultServlet = new DefaultServlet();
+
+        initServlet();
+
         WasShutdownHook wasShutdownHook = new WasShutdownHook(this);
         // jvm shutdown hook
         //jvm 종료될 때 실행항 Thread을 등록한다.
+        // window exit를 눌러야 작동 , mac은 stop해도 작동(종료 시그널 넘버가 있어서 죽는 방식이 틀려서)
         Runtime.getRuntime().addShutdownHook(wasShutdownHook);
+    }
+
+    //map을 초기화
+    private void initServlet(){
+        //servlet.properties에서 정보를 읽어들여 map을 초기화한다.
+        map = new HashMap<>();
+        //ClassLoader classLoader = getClass().getClassLoader();
+        ClassLoader classLoader = WebApplicationServer.class.getClassLoader();
+        InputStream propstream =
+                classLoader.getResourceAsStream("servlet.properties");
+
+        Properties prop = new Properties();
+        try {
+            prop.load(propstream);
+            Set<String> keyes = prop.stringPropertyNames();
+            for(String path : keyes){
+                String className = prop.getProperty(path);
+                RequestMapping mapping = new RequestMapping();
+                mapping.setPath(path);
+                mapping.setServletClassName(className);
+                Class clazz = Class.forName(className);
+                //Servlet s = new HiServlet();
+                Servlet s = (Servlet)clazz.newInstance();
+                mapping.setServlet(s);
+                s.init();
+                map.put(path, mapping);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     public void destory(){
@@ -85,7 +126,8 @@ public class WebApplicationServer implements Runnable{
         }
         System.out.println(request);
 
-
+        //사용자가 요청한 apth가 map에 있으면 map에 있는 Servlet을 실행
+        // 없으면 defaultServlet을 실행
         defaultServlet.service(request, response);
 
         out.close();
