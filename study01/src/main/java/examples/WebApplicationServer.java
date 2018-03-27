@@ -11,7 +11,7 @@ import java.util.Set;
 public class WebApplicationServer implements Runnable{
     private int port;
     private DefaultServlet defaultServlet;
-    private Map<String, RequestMapping> map;
+    private Map<String, RequestMapping> map; // path(key), RequestMapping(value)
 
     public WebApplicationServer(int port) {
         this.port = port;
@@ -126,10 +126,17 @@ public class WebApplicationServer implements Runnable{
         }
         System.out.println(request);
 
-        //사용자가 요청한 apth가 map에 있으면 map에 있는 Servlet을 실행
-        // 없으면 defaultServlet을 실행
-        defaultServlet.service(request, response);
+        if(map.containsKey(request.getPath())){
+            RequestMapping mapping = map.get(request.getPath());
+            Servlet servlet = mapping.getServlet();
+            servlet.service(request, response);
+        }else{
+            //사용자가 요청한 apth가 map에 있으면 map에 있는 Servlet을 실행
+            // 없으면 defaultServlet을 실행
+            defaultServlet.service(request, response);
+        }
 
+        pw.close();
         out.close();
         in.close();
         client.close(); // 클라이언트와 접속이 close된다.
