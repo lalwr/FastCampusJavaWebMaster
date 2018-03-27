@@ -64,7 +64,7 @@
 | <center>[1회차](https://lalwr.blogspot.kr/2018/03/java-1.html) </center>  |
 | <center>[2회차](https://lalwr.blogspot.kr/2018/03/java-2.html) </center>  |
 | <center>[3회차](https://lalwr.blogspot.kr/2018/03/java-3.html) </center>  |
-
+| <center>[3회차](https://lalwr.blogspot.kr/2018/03/java-4.html) </center>  | 
 
 블로그 정리
 -------------
@@ -116,6 +116,13 @@
  3. 채팅 구현해보기( text 채팅)
  4. 수업 내용 정리
  5. 직렬화
+ 
+* 2018-03-27
+ 1. servlet 분리
+ 2. class roader
+ 3. 웹 어플리케이션 구조
+ 4. Tomcat
+ 5. TDD
     
   
 관련 링크
