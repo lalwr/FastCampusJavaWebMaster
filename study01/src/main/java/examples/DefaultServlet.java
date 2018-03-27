@@ -59,4 +59,9 @@ public class DefaultServlet extends Servlet{
             ex.printStackTrace();
         }
     }
+
+    @Override
+    public void destory() {
+        System.out.println("default Servlet의 destory!!!");
+    }
 }

@@ -11,12 +11,17 @@ public class WebApplicationServer implements Runnable{
     public WebApplicationServer(int port) {
         this.port = port;
         defaultServlet = new DefaultServlet();
+        WasShutdownHook wasShutdownHook = new WasShutdownHook(this);
+        // jvm shutdown hook
+        //jvm 종료될 때 실행항 Thread을 등록한다.
+        Runtime.getRuntime().addShutdownHook(wasShutdownHook);
     }
 
     public void destory(){
         defaultServlet.destory();
     }
 
+    @Override
     public void run(){
         ServerSocket listener = null;
         try{
