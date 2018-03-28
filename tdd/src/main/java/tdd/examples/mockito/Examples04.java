@@ -24,7 +24,7 @@ public class Examples04 {
 //        mockedList.add("three times");
 
         verify(mockedList).add("once"); // times(1) 기본값
-        verify(mockedList, times(1)).add("once");
+        verify(mockedList, times(1)).add("once"); //몇번 처리 됐는지
 
         verify(mockedList, times(2)).add("twice");
         verify(mockedList, times(3)).add("three times");

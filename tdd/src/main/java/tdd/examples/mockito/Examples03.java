@@ -13,7 +13,7 @@ public class Examples03 {
         when(mockedList.add(anyFloat())).thenReturn(true);
         when(mockedList.add(anyString())).thenReturn(true);
 
-        System.out.println(mockedList.get(999)); // int
+        System.out.println(mockedList.get(999)); // "int"
         System.out.println(mockedList.add(3.3f)); // true
         System.out.println(mockedList.add("string")); // true
 

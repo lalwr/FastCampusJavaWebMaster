@@ -14,7 +14,7 @@ public class Examples06 {
         test1();
         test2();
     }
-
+    //순서대로 값을 넣었는지 확인할때
     public static void test1(){
         // single mock
         List singleMock = mock(List.class);
@@ -27,7 +27,7 @@ public class Examples06 {
         inOrder.verify(singleMock).add("first");
         inOrder.verify(singleMock).add("second");
     }
-
+    //객체의 호출 순서를 검증할때
     public static void test2(){
         // multiple mocks
         List firstMock = mock(List.class);

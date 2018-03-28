@@ -20,9 +20,9 @@ public class Examples09 {
     @Test
     public void test1() {
 // chaining
-        when(mock.someMethod(anyString()))
+        when(mock.someMethod(anyString())) //한번에 설정을 하기위해
                 .thenReturn("foo")
-                .thenReturn("bar")
+                .thenReturn("bar") // 마지막 값이 계속고정되서 나온다.
                 .thenThrow(new RuntimeException());
 
         System.out.println(mock.someMethod("some arg")); // foo
@@ -34,7 +34,7 @@ public class Examples09 {
     public void test2() {
 // multi arguments
         when(mock.someMethod(anyString()))
-                .thenReturn("one", "two");
+                .thenReturn("one", "two"); // 마지막 값이 계속고정되서 나온다.
 
         System.out.println(mock.someMethod("some arg")); // one
         System.out.println(mock.someMethod("some arg")); // two
