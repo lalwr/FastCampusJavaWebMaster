@@ -29,7 +29,7 @@
 * gitHub에 1일 1 commit 하기
 * JAVA 8 문법 숙지
 * SPRING 4 project 
-* SPRING 4 project 및 SPRING Boot 2.0 project
+* SPRING 5 project 및 SPRING Boot 2.0 project
 
 
 알고리즘 스터디
@@ -122,7 +122,7 @@
  
 * 2018-03-27
  1. servlet 분리
- 2. class roader
+ 2. class loader
  3. 웹 어플리케이션 구조
  4. Tomcat
  5. TDD
