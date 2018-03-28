@@ -9,7 +9,7 @@ public class Exam01 {
         // static 변수는 메모리에 올라간다. static block이 실행된다.
         // JDBC에서 driver load와 관련됨 개념.
         // 클래스 정보를 구하는거를 리플렉션이라고 한다.
-        Class clazz = Class.forName("tdd.examples.MyUiil");
+        Class clazz = Class.forName("tdd.examples.MyUtil");
         System.out.println(MyDriver.getName());
         //인스턴스 생성
         Object obj = clazz.newInstance();
@@ -32,7 +32,7 @@ public class Exam01 {
     }
 }
 
-class MyUiil{
+class MyUtil{
     static{
         MyDriver.setName("MyUtilDriver");
         //System.out.println("static block");

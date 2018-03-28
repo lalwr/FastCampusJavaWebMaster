@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 //리플렉션을 이용해서 메소드를 실행하는 방법
 public class Exam02 {
     public static void main(String[] args) throws Exception{
-        String className = "tdd.examples.MyUiil";
+        String className = "tdd.examples.MyUtil";
         String methodName = "print1"; //파라미터는 없다.
 
         Class clazz = Class.forName(className);
