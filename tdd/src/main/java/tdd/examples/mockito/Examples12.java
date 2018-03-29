@@ -12,6 +12,7 @@ import static org.mockito.Mockito.*;
 public class Examples12 {
     public static void main(String[] args) {
         List mock = mock(List.class);
+        //구현한 메소드가 true일때만 true값을 리턴한다.
         when(mock.addAll(argThat(new ListOfTwoElements()))).thenReturn(true);
 
         mock.addAll(Arrays.asList("one", "two")); // true
