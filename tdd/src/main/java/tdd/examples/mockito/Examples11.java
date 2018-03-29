@@ -23,7 +23,7 @@ public class Examples11 {
     @Test
     public void test() {
         List list = new LinkedList();
-        List spy = spy(list);
+        List spy = spy(list); //spy는 선언한 객체의 기능을 모두다 이용 가능하다.
 
         when(spy.size()).thenReturn(100); // stubbing
 
@@ -37,9 +37,11 @@ public class Examples11 {
         verify(spy).add("two");
 
 // Wrong use case
-        when(spy.get(10)).thenReturn("foo"); // IndexOutOfBoundsException
+        //when(spy.get(10)).thenReturn("foo"); // IndexOutOfBoundsException 구현되어 있는 객체라서 에러가 나온다.
 
 // use doReturn() instead
         doReturn("foo").when(spy).get(0);
+
+        System.out.println(spy.get(0));
     }
 }
