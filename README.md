@@ -29,7 +29,7 @@
 * gitHub에 1일 1 commit 하기
 * JAVA 8 문법 숙지
 * SPRING 4 project 
-* SPRING 4 project 및 SPRING Boot 2.0 project
+* SPRING 5 project 및 SPRING Boot 2.0 project
 
 
 알고리즘 스터디
@@ -64,7 +64,9 @@
 | <center>[1회차](https://lalwr.blogspot.kr/2018/03/java-1.html) </center>  |
 | <center>[2회차](https://lalwr.blogspot.kr/2018/03/java-2.html) </center>  |
 | <center>[3회차](https://lalwr.blogspot.kr/2018/03/java-3.html) </center>  |
-| <center>[3회차](https://lalwr.blogspot.kr/2018/03/java-4.html) </center>  | 
+| <center>[4회차](https://lalwr.blogspot.kr/2018/03/java-4.html) </center>  | 
+| <center>[5회차](https://lalwr.blogspot.kr/2018/03/java-5.html) </center>  | 
+
 
 블로그 정리
 -------------
@@ -80,6 +82,7 @@
 | WAS | <center> [mini was 프로젝트 ](https://lalwr.blogspot.kr/2018/03/java-mini-was_24.html) </center> | <center>18.03.23 </center> |
 | Network | <center> [Blocking 과 NonBlocking](https://lalwr.blogspot.kr/2018/03/blocking-nonblocking.html) </center> | <center>18.03.24 </center> |
 | JAVA | <center> [char, String 형식 입출력](https://lalwr.blogspot.kr/2018/03/java-char-string.html) </center> | <center>18.03.24 </center> |
+| JAVA | <center> [Thead와 notifyAll(), wait() 함수](https://lalwr.blogspot.kr/2018/03/thead-notify-notifyall-wait.html) </center> | <center>18.03.29 </center> |
 
 
 과제
@@ -119,15 +122,15 @@
  
 * 2018-03-27
  1. servlet 분리
- 2. class roader
+ 2. class loader
  3. 웹 어플리케이션 구조
  4. Tomcat
  5. TDD
 
 * 2018-03-28
-  1. MOCKITO 
-  2. JUNIT
-  3. 이름없는 클래스 알아보기(lamda)
+ 1. MOCKITO
+ 2. JUNIT
+ 3. 이름없는 클래스 알아보기(lamda)
   
 관련 링크
 -------------
