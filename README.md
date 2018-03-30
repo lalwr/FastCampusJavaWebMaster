@@ -52,10 +52,8 @@
     2. 단어 정렬 : https://www.acmicpc.net/problem/1181
  
 * 2회차(2018-03-29) 
- 1. 1회차 문제 리뷰
- 2. 2회차 문제 링크
-    1. 피보나치 수 : https://www.acmicpc.net/problem/1978
-    2. 소수찾기 : https://www.acmicpc.net/problem/2747
+ 1. 최소 2문제 이상 풀고 깃허브 Commit하고 발표하기 
+ 2. 
 
 수업 내용 요약
 -------------
