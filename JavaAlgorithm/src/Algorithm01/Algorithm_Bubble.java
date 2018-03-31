@@ -1,3 +1,5 @@
+package Algorithm01;
+
 import java.util.Scanner;
 
 //https://www.acmicpc.net/problem/2947
