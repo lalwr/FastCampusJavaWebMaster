@@ -5,7 +5,7 @@ import java.util.HashSet;
 //https://codefights.com
 // 2개 이상인 숫자 찾기
 // 2개 이상인 숫자가 2개 이상인경우 2번쨰 발생한 중복 숫자의 인덱스가 작은 것을 숫자를 출력한다.
-public class Algorigtm_firstDuplicate {
+public class Algorigtm_FirstDuplicate {
     public static void main(String[] args) {
         int[] a = {2, 3, 3, 1, 5, 2};
         int[] b = {2, 4, 3, 5, 1};
