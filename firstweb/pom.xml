@@ -24,6 +24,14 @@
       <version>3.8.1</version>
       <scope>test</scope> <!-- test드가 실행될때만 라이브러리를 사용하겠다. -->
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+    <dependency>
+      <groupId>jstl</groupId> <!-- <scope></scope> 가 없는 경우는 모든경우 사용하는 라이브러리 -->
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
   </dependencies>
 
 
