@@ -138,8 +138,8 @@
  1. Session , Cookie
  2. forward, Redirect
  3. 과제
-    1. maven 프로젝트 생성 : board
-    2. 리스트 보여주기, 상세 보여주기, paging 처리(jsp, EL, JSTL)
+     1. maven 프로젝트 생성 : board
+     2. 리스트 보여주기, 상세 보여주기, paging 처리(jsp, EL, JSTL)
   
 관련 링크
 -------------
