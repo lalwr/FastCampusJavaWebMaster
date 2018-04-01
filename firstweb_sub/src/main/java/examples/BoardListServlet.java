@@ -20,7 +20,12 @@ public class BoardListServlet extends HttpServlet{
         req.setAttribute("iter", iter);
 
         requestDispatcher.forward(req, resp);
-
     }
 
+    @Override
+    public void destroy() {
+        System.out.println("destory가 호출합니다.");
+        BoardService service = BoardService.getService();
+        service.save();
+    }
 }

@@ -58,7 +58,6 @@ public class GuestbookService {
         try {
             os = new ObjectOutputStream(new FileOutputStream("guestbook.dat"));
             os.writeObject(list);
-            os.close();
         } catch (IOException e) {
             e.printStackTrace();
         }finally {

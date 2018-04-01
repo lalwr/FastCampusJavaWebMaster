@@ -22,7 +22,7 @@ public class BoardWriteServlet extends HttpServlet{
 
         BoardVO boardVO = new BoardVO();
         boardVO.setName(name);
-        boardVO.setContent(name);
+        boardVO.setContent(content);
         boardVO.setRegDate(regDate);
 
         BoardService boardService = BoardService.getService();
