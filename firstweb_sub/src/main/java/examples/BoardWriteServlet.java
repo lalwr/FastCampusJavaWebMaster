@@ -1,7 +1,5 @@
 package examples;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +11,7 @@ import java.util.Date;
 @WebServlet(name = "BoardWriteServlet", urlPatterns = "/write")
 public class BoardWriteServlet extends HttpServlet{
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.setCharacterEncoding("UTF-8");
         String name = req.getParameter("name");
         String content = req.getParameter("content");

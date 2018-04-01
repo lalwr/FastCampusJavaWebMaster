@@ -17,7 +17,7 @@ public class BoardService {
             System.out.println("파일 경로 : " + file.getAbsolutePath()); //파일경로
             try {
                 ois = new ObjectInputStream(new FileInputStream(file));
-                list = (List)ois.readObject();
+                list = (List)ois.readObject(); //파일에 저장한 리스트 읽어어와서 저장하기
             } catch (Exception e) {
                 e.printStackTrace();
             }finally {
@@ -40,7 +40,7 @@ public class BoardService {
     public void save(){
         ObjectOutputStream os = null;
         try{
-            os = new ObjectOutputStream((new FileOutputStream("board.dat")));
+            os = new ObjectOutputStream((new FileOutputStream("board.dat"))); //리스트를 파일로 저장
             os.writeObject(list);
             os.close();
         }catch (Exception e){

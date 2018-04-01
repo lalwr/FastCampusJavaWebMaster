@@ -17,11 +17,11 @@ public class BoardListServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         RequestDispatcher requestDispatcher =
-                    req.getRequestDispatcher("/list.jsp");
+                req.getRequestDispatcher("/list.jsp");
 
         BoardService service = BoardService.getService();
 
-       int pageSize = service.list.size();
+        int pageSize = service.list.size();
 
         BoardPagingInfo pagingInfo = new BoardPagingInfo();
         if(req.getParameter("page") != null){
