@@ -4,4 +4,13 @@
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!-- Tag Library 추가-->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>boardUiLib</taglib-uri>
+            <taglib-location>/WEB-INF/ui/ui.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+    <!-- Tag Library 추가-->
+
 </web-app>
