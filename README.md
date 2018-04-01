@@ -52,8 +52,7 @@
     2. 단어 정렬 : https://www.acmicpc.net/problem/1181
  
 * 2회차(2018-03-29) 
- 1. 최소 2문제 이상 풀고 깃허브 Commit하고 발표하기 
- 2. 
+ 1. 최소 2문제 이상 풀고 깃허브 Commit하고 발표하기  
 
 수업 내용 요약
 -------------
@@ -139,7 +138,7 @@
  2. forward, Redirect
  3. 과제
      1. maven 프로젝트 생성 : board
-     2. 리스트 보여주기, 상세 보여주기, paging 처리(jsp, EL, JSTL)
+     2. 리스트 보여주기, paging 처리(jsp, EL, JSTL)
   
 관련 링크
 -------------
