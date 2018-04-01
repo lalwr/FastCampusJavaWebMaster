@@ -3,7 +3,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <body>
-리스트 페이지 입니다.
-
+<form method="post" action="/write">
+    이름 : <input type="text" name="name">
+    내용 : <textarea cols="60" rows="7" name="content"></textarea>
+    <input type="submit" value="확인">
+</form>
+<c:forEach var="list" items="${iter}" >
+    이름 : ${list.name} <br>
+    내용 : ${list.content} <br>
+    날짜 : ${list.regDate}<br>
+    <br>
+</c:forEach>
 </body>
 </html>

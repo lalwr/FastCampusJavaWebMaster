@@ -1,12 +1,11 @@
 package examples;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class BoardVO implements Serializable{
     private String name;
     private String content;
-    private Date regDate;
+    private String regDate;
 
     public String getName() {
         return name;
@@ -24,11 +23,11 @@ public class BoardVO implements Serializable{
         this.content = content;
     }
 
-    public Date getRegDate() {
+    public String getRegDate() {
         return regDate;
     }
 
-    public void setRegDate(Date regDate) {
+    public void setRegDate(String regDate) {
         this.regDate = regDate;
     }
 }

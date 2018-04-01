@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Iterator;
 
 @WebServlet(name = "/BoardListServlet", urlPatterns = "/list")
 public class BoardListServlet extends HttpServlet{
@@ -15,6 +16,9 @@ public class BoardListServlet extends HttpServlet{
         RequestDispatcher requestDispatcher =
                     req.getRequestDispatcher("/list.jsp");
         BoardService service = BoardService.getService();
+        Iterator<BoardVO> iter = service.getBoard();
+        req.setAttribute("iter", iter);
+
         requestDispatcher.forward(req, resp);
 
     }

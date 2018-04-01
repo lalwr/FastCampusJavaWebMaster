@@ -9,7 +9,7 @@
 <input type="submit" value="확인">
 </form>
 <c:forEach var="list" items="${iter}" >
-        11이름 : ${list.name} <br>
+        이름 : ${list.name} <br>
         내용 : ${list.content} <br>
         <pre>
         날짜 : ${list.regdate}<br>
