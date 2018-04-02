@@ -7,7 +7,7 @@ import soundsystem.MediaPlayer;
 public class CDPlayer implements MediaPlayer {
   private CompactDisc compactDisc;
 
-  @Autowired
+  // compactDisc 프로퍼티 : 첫글자는 소문자로
   public void setCompactDisc(CompactDisc compactDisc) {
     this.compactDisc = compactDisc;
   }

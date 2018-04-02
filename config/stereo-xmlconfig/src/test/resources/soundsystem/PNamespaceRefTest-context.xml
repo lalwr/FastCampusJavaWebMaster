@@ -8,7 +8,12 @@
     <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band" />
     <constructor-arg value="The Beatles" />
   </bean>
-        
+
+  <!--
+    BlankDisc compactDisc = new BlankDisc();
+    CDPlayer cdplayer = new CDPlayer();
+    cdplayer.setCompactDisc(compactDisc);
+  -->
   <bean id="cdPlayer" class="soundsystem.properties.CDPlayer">
     <property name="compactDisc" ref="compactDisc" />
   </bean>

@@ -4,11 +4,19 @@
   xmlns:p="http://www.springframework.org/schema/p"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+  <!--
+     p:title="Sgt. Pepper's Lonely Hearts Club Band"
+     p:artist="The Beatles">
+     는 아래와 같다.
+    <property name="title" value="Sgt. Pepper's Lonely Hearts Club Band" />
+    <property name="artist" value="The Beatles" />
+
+  -->
   <bean id="compactDisc"
         class="soundsystem.properties.BlankDisc"
         p:title="Sgt. Pepper's Lonely Hearts Club Band"
         p:artist="The Beatles">
-    <property name="tracks">
+    <property name="tracks"> <!-- setTracks(List<String>) -->
       <list>
         <value>Sgt. Pepper's Lonely Hearts Club Band</value>
         <value>With a Little Help from My Friends</value>
@@ -29,6 +37,6 @@
         
   <bean id="cdPlayer"
         class="soundsystem.properties.CDPlayer"
-        p:compactDisc-ref="compactDisc" />
+        p:compactDisc-ref="compactDisc" /> <!-- setCompactDisc(CompactDisc) -->
 
 </beans>

@@ -4,10 +4,19 @@
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+  <!-- bean설정에서 위치는 상관이없다. 스프링이 자동적으로 필요한 인스턴스를 만들어 준다. -->
+  <!--
+    BlankDisc compactDisc = new(BlankDisc("Sgt. Pepper's Lonely Hearts Club Band", "The Beatles");
+    c:_0 : 1번재 파라미터  , c:_1 : 2번째 파라미터
+  -->
   <bean id="compactDisc" class="soundsystem.BlankDisc"
-        c:_0="Sgt. Pepper's Lonely Hearts Club Band" 
+        c:_0="Sgt. Pepper's Lonely Hearts Club Band"
         c:_1="The Beatles" />
-        
+  <!--
+    CDPlayer cdPlayer = new CDPlayer();
+    c:
+  -->
   <bean id="cdPlayer" class="soundsystem.CDPlayer"
         c:_-ref="compactDisc" />
 

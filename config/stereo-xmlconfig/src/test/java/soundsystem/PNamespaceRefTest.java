@@ -24,7 +24,7 @@ public class PNamespaceRefTest {
   public void play() {
     player.play();
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n\n",
+        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n",
         log.getLog());
   }
 

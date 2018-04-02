@@ -5,9 +5,15 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean id="compactDisc" class="soundsystem.SgtPeppers" />
-        
+
+  <!--
+    CDPlayer cdPlayer = new CDPlayer(); (x)
+
+    SgtPeppers compactDisc = new SgtPeppers();
+    CDPlayer cdPlayer = new CDPlayer(compactDisc);
+  -->
   <bean id="cdPlayer" class="soundsystem.CDPlayer"
-        c:cd-ref="compactDisc" />
+        c:cd-ref="compactDisc" /> <!-- compactDisc객체를 참조하겠다. -->
 
 </beans>
 
