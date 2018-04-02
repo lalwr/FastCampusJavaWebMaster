@@ -63,8 +63,10 @@
 | <center>[3회차](https://lalwr.blogspot.kr/2018/03/java-3.html) </center>  |
 | <center>[4회차](https://lalwr.blogspot.kr/2018/03/java-4.html) </center>  | 
 | <center>[5회차](https://lalwr.blogspot.kr/2018/03/java-5.html) </center>  | 
-| <center>[6회차](https://lalwr.blogspot.kr/2018/03/java-6.html) </center>  | 
-
+| <center>[6회차](https://lalwr.blogspot.kr/2018/03/java-5_29.html) </center>  | 
+| <center>[7회차](https://lalwr.blogspot.kr/2018/03/java-6.html) </center>  |
+| <center>[8회차](https://lalwr.blogspot.kr/2018/04/java-7spring.html) </center>  | 
+ 
 블로그 정리
 -------------
 |  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
@@ -141,6 +143,11 @@
      1. maven 프로젝트 생성 : board
      2. 리스트 보여주기, paging 처리(jsp, EL, JSTL)
   
+ * 2018-04-02
+ 1. Spring xml 
+ 2. forward, Redirect
+ 3. 과제
+ 
 관련 링크
 -------------
 * Github Flavored Markdown(GFM)
