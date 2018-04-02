@@ -2,7 +2,7 @@ package soundsystem;
 
 import org.springframework.beans.factory.BeanNameAware;
 
-public class Job1 implements BaseJob,BeanNameAware {
+public class Job1 implements BaseJob, BeanNameAware {
     private String id;
 
     @Override
