@@ -9,6 +9,9 @@
         document.getElementById('page').value= page;
         window.location.href = "${contextPath}/list" + "?" + $("#form").serialize();
     }
+    function detail() {
+        window.location.href = "${contextPath}/detail" + "?" + $("#detail").serialize();
+    }
 </script>
 <html>
 <body>
@@ -18,11 +21,15 @@
     내용 : <textarea cols="60" rows="7" name="content"></textarea>
     <input type="submit" value="확인">
 </form>
-<c:forEach var="list" items="${iter}" >
-    이름 : ${list.name} <br>
-    내용 : ${list.content} <br>
-    날짜 : ${list.regDate}<br>
-    <br>
+<c:forEach var="list" items="${iter}" varStatus="status">
+    <form method="get" id="detail" action="/detail" >
+        <input type="hidden" name="no" value="${startPage + status.index}">
+        이름 : ${list.name} <br>
+        내용 : ${list.content} <br>
+        날짜 : ${list.regDate}<br>
+        <input type="submit" value="상세보기">
+        <br>
+    </form>
 </c:forEach>
 <boardUiLib:paging linkFunction="pageNavigation" pagingInfo="${pagingInfo}" />
 </body>
