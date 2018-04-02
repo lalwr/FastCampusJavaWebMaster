@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="job1" class="soundsystem.Job1" />
+    <bean id="job2" class="soundsystem.Job2" />
+    <bean id="job3" class="soundsystem.Job3" />
+    <bean id="jobRunner" class="soundsystem.JobRunner" >
+        <property name="list">
+            <list>
+                <value>job1</value>
+                <value>job2</value>
+                <value>job3</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
+
