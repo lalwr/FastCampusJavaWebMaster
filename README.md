@@ -71,11 +71,11 @@
 -------------
 |  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
 |:--------|:--------:|--------:|
-| algorithm | <center> [Big-O개념](http://lalwr.blogspot.com/2018/03/big-o_20.html) </center> | <center>18.03.20 </center> |
+| Algorithm | <center> [Big-O개념](http://lalwr.blogspot.com/2018/03/big-o_20.html) </center> | <center>18.03.20 </center> |
 | Web application | <center> [Web application 개념](https://lalwr.blogspot.kr/2018/03/blog-post.html) </center> | <center>18.03.20 </center> |
 | Servlet | <center> [Servlet 개념](https://lalwr.blogspot.kr/2018/03/blog-post_20.html) </center> | <center>18.03.22 </center> |
-| maven, jdk | <center> [maven, jdk 설정](https://lalwr.blogspot.kr/2018/03/intellij-maven-jdk.html) </center> | <center>18.03.22 </center> |
-| maven, Servlet | <center> [maven Servlet 프로젝트 Tomcat 구동](https://lalwr.blogspot.kr/2018/03/mac-intellij-maven-servlet-tomcat.html) </center> | <center>18.03.22 </center> |
+| Maven, Jdk | <center> [maven, jdk 설정](https://lalwr.blogspot.kr/2018/03/intellij-maven-jdk.html) </center> | <center>18.03.22 </center> |
+| Maven, Servlet | <center> [maven Servlet 프로젝트 Tomcat 구동](https://lalwr.blogspot.kr/2018/03/mac-intellij-maven-servlet-tomcat.html) </center> | <center>18.03.22 </center> |
 | SPRING | <center> [SPRING INITIALIZR 프로젝트](https://lalwr.blogspot.kr/2018/03/mac-intellij-spring-initializr.html) </center> | <center>18.03.23 </center> |
 | Servlet | <center> [다수의 인스턴스 구현하기](https://github.com/lalwr/FastCampusJavaWebMaster/blob/master/study01/src/main/java/examples/HelloMain.java) </center> | <center>18.03.22 </center> |
 | WAS | <center> [mini was 프로젝트 ](https://lalwr.blogspot.kr/2018/03/java-mini-was_24.html) </center> | <center>18.03.23 </center> |
@@ -84,8 +84,8 @@
 | JAVA | <center> [Thead와 notifyAll(), wait() 함수](https://lalwr.blogspot.kr/2018/03/thead-notify-notifyall-wait.html) </center> | <center>18.03.29 </center> |
 | JAVA | <center> [Java Stream의 이용 방법](https://lalwr.blogspot.kr/2018/03/java-stream.html) </center> | <center>18.03.29 </center> |
 | JAVA | <center> [Java Maven Web 프로젝트 - NO DB](https://lalwr.blogspot.kr/2018/04/intellij-java-maven-web-proejct-db.html) </center> | <center>18.04.02 </center> |
-| Spring | <center> [Spring Bean 및 xml 설정](https://lalwr.blogspot.kr/2018/04/spring-bean-xml.html) </center> | <center>18.04.03 </center> |
-| Spring | <center> [Spring 및 Annotation](https://lalwr.blogspot.kr/2018/04/spring-annotation.html) </center> | <center>18.04.03 </center> |
+| SPRING | <center> [Spring Bean 및 xml 설정](https://lalwr.blogspot.kr/2018/04/spring-bean-xml.html) </center> | <center>18.04.03 </center> |
+| SPRING | <center> [Spring 및 Annotation](https://lalwr.blogspot.kr/2018/04/spring-annotation.html) </center> | <center>18.04.03 </center> |
 
 
 과제
