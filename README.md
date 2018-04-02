@@ -145,9 +145,8 @@
      2. 리스트 보여주기, paging 처리(jsp, EL, JSTL)
   
  * 2018-04-02
- 1. Spring xml 
- 2. forward, Redirect
- 3. 과제
+ 1. Spring Bean 
+ 2. Spring xml 설정
  
 관련 링크
 -------------
