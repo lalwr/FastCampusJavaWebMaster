@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dice" class="soundsystem.examDice.Dice">
+        <constructor-arg value="6"/>
+    </bean>
+
+    <bean id="Kim" class="soundsystem.examDice.Player">
+        <property name="dice" ref="dice" />
+        <property name="name" value="김성박" />
+    </bean>
+    <bean id="choi" class="soundsystem.examDice.Player">
+        <property name="dice" ref="dice" />
+        <property name="name" value="최준영" />
+    </bean>
+    <bean id="kang" class="soundsystem.examDice.Player">
+        <property name="dice" ref="dice" />
+        <property name="name" value="강사무엘" />
+    </bean>
+
+    <bean id="game" class="soundsystem.examDice.Game">
+        <property name="playerList">
+            <list>
+                <ref bean="Kim"></ref>
+                <ref bean="choi"></ref>
+                <ref bean="kang"></ref>
+            </list>
+        </property>
+
+    </bean>
+</beans>
+
