@@ -17,9 +17,8 @@ public class SpringExam01 {
         MyBean bean2 = (MyBean)context.getBean("bean1");
         System.out.println(bean2.getName()); //홍길동이 출력된다.
 
-        MyBean bean5 = context.getBean(MyBean.class); //형변환을 안해도 된다.
+        //MyBean bean5 = context.getBean(MyBean.class); //형변환을 안해도 된다. 클래스 하나에 bean이 2개라서 에러 발생
         MyBean bean6 = context.getBean("bean1",MyBean.class); //형변환 하지 않는다. 빈 이름을 설정 가능하다.
-        System.out.println(bean5.getName());
         System.out.println(bean6.getName());
 
        /* MyBean bean3 = (MyBean)context.getBean("bean2");
