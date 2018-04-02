@@ -4,6 +4,7 @@ public class Dice {
     int face;
 
     public Dice(int face){
+        System.out.println("Dice()");
         this.face = face;
     }
 

@@ -4,7 +4,11 @@ public class Player {
     private String name;
     private Dice dice;
 
+    public Player(){
+        System.out.println("Player()");
+    }
     public void setDice(Dice dice) {
+        System.out.println("Player.setDice");
         this.dice = dice;
     }
 
@@ -13,6 +17,7 @@ public class Player {
     }
 
     public void setName(String name) {
+        System.out.println("Player.setName");
         this.name = name;
     }
 

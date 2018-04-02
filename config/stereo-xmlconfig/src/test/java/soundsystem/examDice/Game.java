@@ -7,6 +7,7 @@ public class Game {
 
     public void setPlayerList(List<Player> list){
         this.list = list;
+        System.out.println("Game.setPlayerList");
     }
 
     public void play(){
