@@ -1,0 +1,9 @@
+create table member (
+	userid varchar2(20) primary key,
+	userpass varchar2(8) not null,
+	username varchar2(20) not null
+);
+
+insert into member values ( 'urstory', '1234', 'kim sp');
+insert into member values ('carami', '1234', 'kang km');
+commit;

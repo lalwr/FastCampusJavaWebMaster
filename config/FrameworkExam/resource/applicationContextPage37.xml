@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="userService" class="chap02.UserService" init-method="initMethod" destroy-method="destoryMethod"/>
+	<bean id="userService47" class="chap02.UserServicePage47" factory-method="getInstance"/>
+	
+	<bean id="userServiceFactory" class="chap02.UserServiceFactory"/>
+	<bean id="userService49" class="chap02.UserService" factory-method="getInstance" factory-bean="userServiceFactory"/>
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="bookStore" class="examples.spring.ch02.collection.BookStore" >
+		<property name="bookList">
+			<list>
+				<map>
+					<entry key="title">
+						<value>첫 번째 책의 제목</value>
+					</entry>
+					<entry key="authorList">
+						<list>
+							<value>홍길동</value>
+							<value>임꺽정</value>
+						</list>
+					</entry>
+				</map>
+				<map>
+					<entry key="title">
+						<value>두 번째 책의 제목</value>
+					</entry>
+					<entry key="authorList">
+						<list>
+							<value>이순신</value>
+							<value>장보고</value>
+						</list>
+					</entry>
+				</map>
+			</list>
+		</property>
+	</bean>
+
+</beans>
