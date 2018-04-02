@@ -44,6 +44,7 @@ public class BoardListServlet extends HttpServlet{
         List resultList = list.subList(startPage, endPage); //startPage 이상 endPage 미만
 
         req.setAttribute("iter", resultList);
+        req.setAttribute("startPage", startPage);
 
         requestDispatcher.forward(req, resp);
     }
