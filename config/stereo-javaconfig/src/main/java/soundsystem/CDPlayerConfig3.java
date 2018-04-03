@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CDPlayerConfig3 {
 
-  // 파라미터 이름에 해당하는 메소드 이름이 있어도 @Qualifier("myDisc") 이 우선한다. (이긴다!)
+  //파라미터 이름에 해당하는 메소드 이름이 있어도 @Qualifier("myDisc") 이 우선한다. (이긴다!)
   @Bean
   public CDPlayer cdPlayer(@Qualifier("myDisc")CompactDisc compactDisc) {
     System.out.println("cdPlayer() 호출");
