@@ -3,7 +3,7 @@ package soundsystem;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-// refelrection  proxy , cgLIB
+// reflection proxy , cgLIB
 public class SpringExam02 {
     public static void main(String[] args) {
         ApplicationContext context =
