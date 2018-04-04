@@ -5,6 +5,18 @@ import java.util.HashSet;
 //https://codefights.com
 // 2개 이상인 숫자 찾기
 // 2개 이상인 숫자가 2개 이상인경우 2번쨰 발생한 중복 숫자의 인덱스가 작은 것을 숫자를 출력한다.
+/*
+컬렉션 클래스 : HashSet (java.util.HashSet)
+ - 저장하려는 객체에 대해 hashCode()를 호출하여
+   그 리턴 값을 가지고 저장할 위치를 계산한다.
+ - null 값을 저장할 수 있다.
+ - 값을 중복 저장할 수 없다.
+   이유 -> '집합'이기 때문
+ - 값을 넣을 때 인스턴스의 해시값을 기준으로 저장하기 때문에
+   순서대로 저장되지 않는다.
+   그래서 값을 꺼낼 때도 순서대로 꺼낼 수 없다.
+ - 값을 꺼낼 때 숫자 인덱스로 꺼낼 수 없다.
+*/
 public class Algorigtm_FirstDuplicate {
     public static void main(String[] args) {
         int[] a = {2, 3, 3, 1, 5, 2};
