@@ -37,7 +37,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
-			<scope>provided</scope>
+			<scope>provided</scope> <!-- 컴파일 할때만 사용하고 배포할때는 사용하지 말라는 뜻-->
 		</dependency>
 
 		<dependency>
@@ -47,6 +47,7 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- jsp는 결과를 출력 JSTL & EL(WAS에 있다) -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
@@ -56,6 +57,7 @@
 	<build>
 		<finalName>mvcexam</finalName>
 		<plugins>
+			<!-- 해당 플러그인이 지정안되어 있다면 maven프로젝트는 JDK 1.5를 사용 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -66,7 +68,7 @@
 				</configuration>
 			</plugin>
 
-			<!-- tomcat -->
+			<!-- maven에서 tomcat을 실행한다. -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
