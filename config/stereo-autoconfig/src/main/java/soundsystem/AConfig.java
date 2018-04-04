@@ -5,10 +5,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan
-public class CDPlayerConfig {
+public class AConfig {
 
-    @Bean("twiceDisc")
-    public CompactDisc twriceDisc(){
-        return new TwiceDisc();
+    @Bean
+    public C c(D3 d3){
+        C c = new C();
+        c.d3 = d3;
+        return c;
     }
 }
