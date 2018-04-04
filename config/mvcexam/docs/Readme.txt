@@ -22,7 +22,7 @@ tomcat은 ROOT 라는 이름의 웹어플리케이션은 / 로 인식을 한다.
 http://localhost:8080/hello.jsp (ROOT 웹어플리케이션의 hello.jsp)
 http://localhost:8080/manager/hello.jsp (manager 웹 어플리케이션의 hello.jsp)
 
-웹펄플리케이션이(board) - 예를들어 게시판 웹 어플리케이션
+웹어플리케이션이(board) - 예를들어 게시판 웹 어플리케이션
     |
     +---- WEB-INF -- WEB.xml
     |           +
@@ -34,7 +34,7 @@ http://localhost:8080/manager/hello.jsp (manager 웹 어플리케이션의 hello
     |
     +---- 폴더, 각종 파일들
 
-manager폴더 안의 내용을 jar로 묶어서 하나의 파일로 만든다. board.war 로 만든다.
+board폴더 안의 내용을 jar로 묶어서 하나의 파일로 만든다. board.war 로 만든다.
 
 tomcat에 배포하려면 어떻게 하는가?
 
