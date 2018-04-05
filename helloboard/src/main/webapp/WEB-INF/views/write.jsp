@@ -16,7 +16,7 @@
         <label for="subject">제목</label>
         <input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요" >
     </div>
-    <button type="submit" class="btn btn-default" >저장</button>
+    <button type="submit" class="btn btn-default cursor-pointer" >저장</button>
 </form>
 </body>
 </html>

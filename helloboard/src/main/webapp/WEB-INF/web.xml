@@ -43,5 +43,14 @@
   </filter-mapping>
   <!-- 한글설정 END -->
 
+  <!-- Tag Library 추가-->
+  <jsp-config>
+    <taglib>
+      <taglib-uri>boardUiLib</taglib-uri>
+      <taglib-location>/WEB-INF/ui/ui.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <!-- Tag Library 추가-->
+
 
 </web-app>

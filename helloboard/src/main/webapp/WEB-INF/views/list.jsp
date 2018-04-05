@@ -37,7 +37,7 @@
         </c:forEach>
         </tbody>
     </table>
-    <button type="button" class="btn btn-default" id="write">글쓰기</button>
+    <button type="button" class="btn btn-default cursor-pointer" id="write">글쓰기</button>
 </div>
 </body>
 </html>

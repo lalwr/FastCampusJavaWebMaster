@@ -18,7 +18,7 @@ public class BoardController {
     public String boardList(ModelMap modelMap){
 
         if(list.size() == 0){
-            for(int i =1; i < 3; i++){
+            for(int i =1; i < 5; i++){
                 BoardVO boardVO = new BoardVO();
                 boardVO.setNo(i);
                 boardVO.setSubject("연습게시판" + i);
@@ -46,18 +46,23 @@ public class BoardController {
     @GetMapping(value = "/detail/{no}")
     public String boardDetail(@PathVariable int no, ModelMap modelMap){
         BoardVO boardVO = (BoardVO) list.get(no-1);
-        System.out.println("detail");
         modelMap.addAttribute("boardVO", boardVO);
         return "detail";
     }
 
-    @PostMapping(value = "/update")
-    public String boardUpdate(@RequestParam(required = true) int no, @RequestParam(required = true) String name){
-        HashMap hashMap = new HashMap();
-        hashMap.put("no", no);
-        hashMap.put("name", name);
-        list.set(no-1, hashMap);
+    @RequestMapping(value = "/update", method = RequestMethod.PUT)
+    public String boardUpdate(@RequestParam(name="no", required = true) int no, @RequestParam(name = "subject" ,required = true) String subject){
+        BoardVO boardVO = new BoardVO();
+        boardVO.setNo(no);
+        boardVO.setSubject(subject);
+        list.set(no-1, boardVO);
 
+        return "redirect:/boards";
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+    public String boardDelete(@RequestParam(name = "no", required = true) int no){
+        list.remove(no-1);
         return "redirect:/boards";
     }
 
