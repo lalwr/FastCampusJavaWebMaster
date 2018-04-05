@@ -21,17 +21,21 @@ public class InputController {
         modelMap.addAttribute("name", name);
         modelMap.addAttribute("blod", blod);
 
-        if(blod.equals("A")){
-            modelMap.addAttribute("result", "A형은 소심합니다.");
-        }else if(blod.equals("B")){
-            modelMap.addAttribute("result", "B형은 다혈질 입니다.");
-        }else if(blod.equals("AB")){
-            modelMap.addAttribute("result", "AB형은 천재입니다.");
-        }else if(blod.equals("O")){
-            modelMap.addAttribute("result", "O형은 활발합니다.");
+        //blod.equals("A") 를 사용 안하는 이유는 blod가 값이 없으면 null 포인트 Exception이 발생하기 때문이다.
+
+        String msg = "";
+        if("A".equals(blod)){
+            msg = "A형은 소심합니다.";
+        }else if("B".equals(blod)){
+            msg = "B형은 다혈질 입니다.";
+        }else if("B".equals(blod)){
+            msg = "AB형은 천재입니다.";
+        }else if("O".equals(blod)){
+            msg = "O형은 활발합니다.";
         }else{
-            modelMap.addAttribute("result", "혈액형은 A, B , AB, O형이 입력이 가능합니다.");
+            msg = "혈액형은 A, B , AB, O형이 입력이 가능합니다.";
         }
+        modelMap.addAttribute("result", msg);
 
         return "inputResult";
     }

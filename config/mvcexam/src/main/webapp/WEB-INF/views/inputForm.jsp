@@ -9,7 +9,13 @@
 <body>
 <form method="post" action="input">
 이름 : <input type="text" name="value1"><br>
-혈액형 : <input type="text" name="value2"><br>
+혈액형 :
+    <option name="blod">
+        <select value="A"></select>
+        <select value="B"></select>
+        <select value="C" ></select>
+        <select value="D"></select>
+    </option>
 <input type="submit" value="확인">  
 </form>  
 </body>
