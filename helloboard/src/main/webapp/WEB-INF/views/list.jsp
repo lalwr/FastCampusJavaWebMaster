@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
-    $( document ).ready(function(){
-        $( "#write" ).click(function() {
-            document.location.href = "${contextPath}/write";
+    $(document).ready(function() {
+        $("#write").click(function() {
+            window.location.href = "${contextPath}/write?" + $("#form").serialize();
+            return false;
         });
     });
     function pageNavigation(page) {
@@ -27,7 +28,7 @@
 <body>
 <form id="form" name="form">
     <div class="container">
-        <input type="hidden" id="page" name="page" value="${pagingInfo.page}">
+        <input type="hidden" id="page" name="page" value="${board.page}">
         <table class="table table-hover">
             <thead>
             <tr>
@@ -39,7 +40,7 @@
             <c:forEach var="list" items="${list}" varStatus="status">
                 <tr>
                     <td>${list.no}</td>
-                    <td><a onclick="javascript:detail(${list.no})" onclick="return false;">${list.subject}</a></td>
+                    <td style="cursor:pointer"><a onclick="javascript:detail(${list.no})" onclick="return false;">${list.subject}</a></td>
                 </tr>
             </c:forEach>
             </tbody>

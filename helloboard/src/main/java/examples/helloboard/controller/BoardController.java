@@ -16,7 +16,7 @@ public class BoardController {
     public static List list = new ArrayList();
 
     @GetMapping
-    public String boardList(@ModelAttribute BoardVO boardVO, ModelMap modelMap) throws Exception{
+    public String boardList(@ModelAttribute("board") BoardVO boardVO, ModelMap modelMap) throws Exception{
 
         if(list.size() == 0){
             for(int i =1; i < 5; i++){
@@ -49,13 +49,13 @@ public class BoardController {
         return "list";
     }
 
-    @GetMapping(value = "/write")
-    public String boardwriteForm() throws Exception{
+    @GetMapping(value = "/write" )
+    public String boardwriteForm(@ModelAttribute("board") BoardVO boardVO) throws Exception{
         return "write";
     }
 
     @PostMapping(value = "/write")
-    public String boardwrite(@ModelAttribute BoardVO boardVO) throws Exception{
+    public String boardwrite(@ModelAttribute("board") BoardVO boardVO) throws Exception{
         BoardVO updateVO = new BoardVO();
         updateVO.setNo(list.size()+1);
         updateVO.setSubject(boardVO.getSubject());
