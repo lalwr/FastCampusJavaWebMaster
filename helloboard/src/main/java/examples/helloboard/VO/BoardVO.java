@@ -1,6 +1,6 @@
 package examples.helloboard.VO;
 
-public class BoardVO {
+public class BoardVO extends CommonVO{
     public String subject;
     public int no;
 

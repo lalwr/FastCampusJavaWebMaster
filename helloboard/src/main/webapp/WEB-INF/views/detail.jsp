@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <body>
-<form method="post" id="form" action="/update">
+<form method="post" id="form" name="form" action="/update">
     <div class="form-group">
         <label for="no">번호</label>
         <input type="text" class="form-control" id="no" name="no" placeholder="" value="${boardVO.no}" readonly>

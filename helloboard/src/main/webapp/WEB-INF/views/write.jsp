@@ -10,8 +10,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <body>
-<form method="post" id="form" action="/write">
-    <input type="hidden" id="page" name="page" value="">
+<form method="post" id="form" name="form" action="/write">
     <div class="form-group">
         <label for="subject">제목</label>
         <input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요" >
