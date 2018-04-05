@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class UserController {
+	// @GetMapping("/usrform")
 	@RequestMapping(path="/userform", method=RequestMethod.GET)
 	public String userform() {
 		return "userform";
