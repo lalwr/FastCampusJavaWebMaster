@@ -8,13 +8,14 @@
 </head>
 <body>
 <form method="post" action="input">
-이름 : <input type="text" name="value1"><br>
+이름 : <input type="text" name="name"><br>
 혈액형 :
-    <option name="blod">
-        <select value="A"></select>
-        <select value="B"></select>
-        <select value="C" ></select>
-        <select value="D"></select>
+    <select name="blod">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+        <option value="AB">AB</option>
+    </select>
     </option>
 <input type="submit" value="확인">  
 </form>  

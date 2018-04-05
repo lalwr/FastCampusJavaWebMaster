@@ -15,7 +15,7 @@ public class InputController {
     }
 
     @PostMapping(path = "/input")
-    public String input(@RequestParam(name = "value1") String name, @RequestParam(name = "value2") String blod,
+    public String input(@RequestParam(name = "name") String name, @RequestParam(name = "blod") String blod,
                         ModelMap modelMap){
 
         modelMap.addAttribute("name", name);

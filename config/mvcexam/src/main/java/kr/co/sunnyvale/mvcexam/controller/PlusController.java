@@ -37,7 +37,7 @@ public class PlusController {
 	*/
 	@PostMapping(path = "/plus")
 	public String plus(@RequestParam(name = "value1", required = false, defaultValue = "0") int value1,
-			@RequestParam(name = "value2", required = true) int value2, ModelMap modelMap) {
+			@RequestParam(name = "blod", required = true) int value2, ModelMap modelMap) {
 
 		int result = value1 + value2;
 		//3가지 값을 modelMap에 저장한다.
