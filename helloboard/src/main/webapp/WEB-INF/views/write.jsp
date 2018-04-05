@@ -9,9 +9,21 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $("#register").click(function() {
-            window.location.href = "${contextPath}/write?" + $("#form").serialize();
-            return false;
+        $("#register").submit(function(e) {
+
+            var url = "${contextPath}/write"; // the script where you handle the form input.
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $("#register").serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    alert(data); // show response from the php script.
+                }
+            });
+
+            e.preventDefault(); // avoid to execute the actual submit of the form.
         });
     });
 
@@ -25,7 +37,7 @@
         <label for="subject">제목</label>
         <input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요" >
     </div>
-    <button type="button" class="btn btn-outline btn-warning btn-sm registerBtn" id="register">등록</button>
+    <button type="submit" class="btn btn-outline btn-warning btn-sm registerBtn" id="register">등록</button>
 </form>
 </body>
 </html>
