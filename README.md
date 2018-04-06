@@ -69,6 +69,7 @@
 | <center>[9회차](https://lalwr.blogspot.kr/2018/04/java-9spring.html) </center>  | 
 | <center>[10회차](https://lalwr.blogspot.kr/2018/04/java-10spring.html) </center>  | 
 | <center>[11회차](https://lalwr.blogspot.kr/2018/04/java-11-spring.html) </center>  | 
+| <center>[12회차](https://lalwr.blogspot.kr/2018/04/java-12-db.html) </center>  | 
  
 블로그 정리
 -------------
@@ -93,6 +94,9 @@
 | JAVA | <center> [JAVA Comparable vs Comparator](https://lalwr.blogspot.kr/2018/04/java-comparable-vs-comparator.html) </center> | <center>18.04.03 </center> |
 | SPRING | <center> [Spring에서 Maven](https://lalwr.blogspot.kr/2018/04/spring-maven.html) </center> | <center>18.04.04 </center> |
 | SPRING | <center> [Spring DispatcherSerlvet](https://lalwr.blogspot.kr/2018/04/spring-dispatcherserlvet.html) </center> | <center>18.04.04 </center> |
+| SPRING | <center> [Spring Maven Project 기본 셋팅](https://lalwr.blogspot.kr/2018/04/spring-maven-project.html) </center> | <center>18.04.05 </center> |
+
+
 
 과제
 -------------
@@ -167,6 +171,10 @@
  * 2018-04-05
  1. Spring 게시판 실습
  2. Spring
+
+ * 2018-04-06
+ 1. Spring 게시판 실습
+ 2. DB, SQL
 
 관련 링크
 -------------
