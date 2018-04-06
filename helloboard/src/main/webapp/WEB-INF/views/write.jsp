@@ -11,7 +11,7 @@
     $(document).ready(function() {
         $("#register").submit(function(e) {
 
-            var url = "${contextPath}/write"; // the script where you handle the form input.
+            var url = "${contextPath}"; // the script where you handle the form input.
 
             $.ajax({
                 type: "POST",
@@ -31,7 +31,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <body>
-<form method="post" id="form" name="form" action="/write">
+<form method="post" id="form" name="form" >
     <input type="hidden" id="page" name="page" value="${board.page}">
     <div class="form-group">
         <label for="subject">제목</label>

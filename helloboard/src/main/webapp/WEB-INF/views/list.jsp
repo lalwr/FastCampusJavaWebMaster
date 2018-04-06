@@ -17,10 +17,10 @@
     });
     function pageNavigation(page) {
         $("#page").val(page);
-        window.location.href = "${contextPath}/list" + "?" + $("#form").serialize();
+        window.location.href = "${contextPath}?" + $("#form").serialize();
     }
     function detail(no) {
-        window.location.href = "${contextPath}/detail/" + no;
+        window.location.href = "${contextPath}/" + no;
     }
 </script>
 <!DOCTYPE html>

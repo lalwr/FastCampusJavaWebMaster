@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Controller(value = "/boards")
+@Controller
+@RequestMapping(value = "/boards")
 public class BoardController {
 
     public static List list = new ArrayList();
@@ -19,7 +20,7 @@ public class BoardController {
     public String boardList(@ModelAttribute("board") BoardVO boardVO, ModelMap modelMap) throws Exception{
 
         if(list.size() == 0){
-            for(int i =1; i < 5; i++){
+            for(int i =1; i < 100; i++){
                 BoardVO board = new BoardVO();
                 board.setNo(i);
                 board.setSubject("연습게시판" + i);
@@ -63,14 +64,14 @@ public class BoardController {
         return "redirect:/boards";
     }
 
-    @GetMapping(value = "/detail/{no}")
-    public String boardDetail(@PathVariable int no, ModelMap modelMap) throws Exception{
+    @GetMapping(value = "/{no}")
+    public String boardDetail(@PathVariable(value ="no") int no, ModelMap modelMap) throws Exception{
         BoardVO boardVO = (BoardVO) list.get(no-1);
         modelMap.addAttribute("boardVO", boardVO);
         return "detail";
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.PUT)
+    @PutMapping
     public String boardUpdate(@RequestParam(name="no", required = true) int no,
                               @RequestParam(name = "subject" ,required = true) String subject) throws Exception{
         BoardVO boardVO = new BoardVO();
@@ -81,7 +82,7 @@ public class BoardController {
         return "redirect:/boards";
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+    @DeleteMapping
     public String boardDelete(@RequestParam(name = "no", required = true) int no) throws Exception{
         list.remove(no-1);
         return "redirect:/boards";
