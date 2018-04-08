@@ -95,8 +95,7 @@
 | SPRING | <center> [Spring에서 Maven](https://lalwr.blogspot.kr/2018/04/spring-maven.html) </center> | <center>18.04.04 </center> |
 | SPRING | <center> [Spring DispatcherSerlvet](https://lalwr.blogspot.kr/2018/04/spring-dispatcherserlvet.html) </center> | <center>18.04.04 </center> |
 | SPRING | <center> [Spring Maven Project 기본 셋팅](https://lalwr.blogspot.kr/2018/04/spring-maven-project.html) </center> | <center>18.04.05 </center> |
-
-
+| Intellij | <center> [Intellij에서 .gitignore 파일 만들기](https://lalwr.blogspot.kr/2018/04/intellij-gitignore.html) </center> | <center>18.04.05 </center> |
 
 과제
 -------------
