@@ -70,6 +70,8 @@
 | <center>[10회차](https://lalwr.blogspot.kr/2018/04/java-10spring.html) </center>  | 
 | <center>[11회차](https://lalwr.blogspot.kr/2018/04/java-11-spring.html) </center>  | 
 | <center>[12회차](https://lalwr.blogspot.kr/2018/04/java-12-db.html) </center>  | 
+| <center>[14회차](https://lalwr.blogspot.kr/2018/04/java-14-github.html) </center>  | 
+
  
 블로그 정리
 -------------
@@ -176,6 +178,12 @@
  * 2018-04-06
  1. Spring 게시판 실습
  2. DB, SQL
+
+ * 2018-04-07
+ 1. Spring 게시판 실습
+
+ * 2018-04-10
+ 1. Spring JDBC
 
 관련 링크
 -------------
