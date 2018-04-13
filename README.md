@@ -106,6 +106,7 @@
 | Git | <center> [GitHub 코드리뷰 방법](http://lalwr.blogspot.com/2018/04/github.html) </center> | <center>18.04.13 </center> |
 
 
+
 과제
 -------------
 * 2018-03-19 
@@ -189,6 +190,7 @@
 
  * 2018-04-10
  1. Spring JDBC
+ 2. Spring lombok
 
  * 2018-04-12
  1. Spring JDBC
@@ -205,3 +207,9 @@
  2. [Mastering Markdown](https://guides.github.com/features/mastering-markdown/index.html)
 * CommonMark
  1. [CommonMark](http://commonmark.org/)
+* Git-flow
+ 1. [git-flow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/index.ko_KR.html) 
+ 2. [초심자를 위한 Github 협업 튜토리얼](https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/)
+
+ 
+ 

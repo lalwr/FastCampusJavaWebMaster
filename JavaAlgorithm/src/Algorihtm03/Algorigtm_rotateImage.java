@@ -6,6 +6,7 @@ package Algorihtm03;
 public class Algorigtm_rotateImage {
     public static void main(String[] args) {
         int[][] a = {{1, 2, 3, 4, 5}, {6, 7, 8 ,9, 10}, {11, 12, 13 ,14, 15}, {16, 17, 18 ,19, 20}, {21, 22, 23 ,24, 25}};
+        //int[][] a = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
         rotateImage(a);
         
         /* display */
@@ -22,7 +23,7 @@ public class Algorigtm_rotateImage {
         for(int i = 0; i < n / 2; i++){
             for(int j = i; j < n-i-1; j++){
                 System.out.println("i: " + i + " j: " + j);
-                System.out.println("tmpe :" + a[i][j]);
+                System.out.println("temp :" + a[i][j]);
                 System.out.println("a[i][j] : " + a[i][j] + " a[n-j-1][i] : " + a[n-j-1][i]);
                 System.out.println("a[n-j-1][i] : " + a[n-j-1][i] + " a[n-1-i][n-1-j] : " + a[n-1-i][n-1-j]);
                 System.out.println("a[n-1-i][n-1-j] : " + a[n-1-i][n-1-j] + " a[j][n-1-i] : " + a[j][n-1-i]);
