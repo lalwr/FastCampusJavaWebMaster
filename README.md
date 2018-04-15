@@ -71,6 +71,10 @@
 | <center>[11회차](https://lalwr.blogspot.kr/2018/04/java-11-spring.html) </center>  | 
 | <center>[12회차](https://lalwr.blogspot.kr/2018/04/java-12-db.html) </center>  | 
 | <center>[14회차](https://lalwr.blogspot.kr/2018/04/java-14-github.html) </center>  | 
+| <center>[15회차](https://lalwr.blogspot.kr/2018/04/java-15webxml-http-junit-trancation.html) </center>  | 
+| <center>[16회차](https://lalwr.blogspot.kr/2018/04/java-16string.html) </center>  | 
+
+
 
  
 블로그 정리
@@ -99,7 +103,11 @@
 | SPRING | <center> [Spring Maven Project 기본 셋팅](https://lalwr.blogspot.kr/2018/04/spring-maven-project.html) </center> | <center>18.04.05 </center> |
 | SPRING | <center> [Spring tiles3 설정](http://lalwr.blogspot.com/2018/04/spring-tiles3.html) </center> | <center>18.04.08 </center> |
 | Intellij | <center> [Intellij에서 .gitignore 파일 만들기](https://lalwr.blogspot.kr/2018/04/intellij-gitignore.html) </center> | <center>18.04.05 </center> |
-| SPRING | <center> [Spring JDBC](https://lalwr.blogspot.kr/2018/04/spring-jdbc.html) </center> | <center>18.04.11 </center> |
+| Spring | <center> [Spring JDBC](https://lalwr.blogspot.kr/2018/04/spring-jdbc.html) </center> | <center>18.04.11 </center> |
+| Spring | <center> [Spring 에서 HTTP Protocol 사용하기](https://lalwr.blogspot.kr/2018/04/spring-http-protocolgetpostputdelete.html) </center> | <center>18.04.13 </center> |
+| Git | <center> [GitHub 코드리뷰 방법](http://lalwr.blogspot.com/2018/04/github.html) </center> | <center>18.04.13 </center> |
+| TDD | <center> [Intellij 에서 개발소스 테스트하는 방법](https://lalwr.blogspot.kr/2018/04/intellij_14.html) </center> | <center>18.04.14 </center> |
+
 
 
 과제
@@ -186,6 +194,19 @@
  * 2018-04-10
  1. Spring JDBC
  2. Spring lombok
+
+ * 2018-04-12
+ 1. Spring JDBC
+ 2. Spring HTTP Protocol
+ 3. Web.xml 
+ 4. Junit
+ 5. Spring Trancation
+ 6. Github 협엽
+
+ * 2018-04-13
+ 1. String
+ 2. git flow
+ 3. sourceTree
 
 관련 링크
 -------------
