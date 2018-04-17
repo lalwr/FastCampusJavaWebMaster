@@ -5,14 +5,25 @@
 -------------
 * 2018.03.19 ~ 06.08
 
-공부 목록 순서
+공부 목록
 -------------
 * Class
 * Interface
 * generics
 * lamda, Stream
 * thread
-* Tomcat구조(그림)
+* Tomcat구조 
+* Spring
+* JPA
+* rabbitmq
+* redis
+* Srping Boot 2.0   
+* Docker
+* Spring, Maven, Gradle profile
+* CTIP
+* Sharding
+* i18n ,locale
+* FlashMap
 
 수업 시간
 -------------
@@ -35,24 +46,14 @@
 알고리즘 스터디
 -------------
 * 규칙
- * 주 3~4회 이상 문제 풀기
+ * 주 1~2회 이상 문제 풀기
  * 매주 수요일 알고리즘 풀이 설명 및 리뷰
- * 스터디 전날까지 GitHub에 소스 업로드 하기
  
 * 관련 링크
  * Big-O 
     1. https://youtu.be/6Iq5iMCVsXA
     2. https://youtu.be/Y7KTRu6-XK0
-    3. https://www.youtube.com/watch?v=OVRLHJC95Gs&t=2s
-
-* 1회차(2018-03-21) 
- 1. 알고리즘 공부 방향 의견 수립
- 2. 1회차 문제 링크
-    1. 버블정렬 : https://www.acmicpc.net/problem/2947
-    2. 단어 정렬 : https://www.acmicpc.net/problem/1181
- 
-* 2회차(2018-03-29) 
- 1. 최소 2문제 이상 풀고 깃허브 Commit하고 발표하기  
+    3. https://www.youtube.com/watch?v=OVRLHJC95Gs&t=2s 
 
 수업 내용 요약
 -------------
@@ -74,6 +75,8 @@
 | <center>[15회차](https://lalwr.blogspot.kr/2018/04/java-15webxml-http-junit-trancation.html) </center>  | 
 | <center>[16회차](https://lalwr.blogspot.kr/2018/04/java-16string.html) </center>  | 
 | <center>[17회차](http://lalwr.blogspot.com/2018/04/java-17.html) </center>  | 
+| <center>[18회차](http://lalwr.blogspot.com/2018/04/java-18docker-viewresolver-profile-ctip.html) </center>  | 
+
 
  
 블로그 정리
@@ -109,9 +112,10 @@
 | JAVA | <center> [JAVA에서 String](https://lalwr.blogspot.kr/2018/04/java-string.html) </center> | <center>18.04.14 </center> |
 | Spring | <center> [Spring Fileupload 관련 내용](https://lalwr.blogspot.kr/2018/04/spring-fileupload.html) </center> | <center>18.04.17 </center> |
 | Spring | <center> [Spring Interceptor](https://lalwr.blogspot.kr/2018/04/spring-interceptor.html) </center> | <center>18.04.17 </center> |
+| JAVA | <center> [ThreadLocal 개념](https://lalwr.blogspot.kr/2018/04/threadlocal.html) </center> | <center>18.04.17 </center> |
 
 
-과제
+수업
 -------------
 * 2018-03-19 
  1. 알고리즘 Big-O개념 정리하여 공유하기
@@ -209,8 +213,15 @@
  2. git flow
  3. sourceTree
 
- * 2018-04-14
+ * 2018-04-16
  1. Spring Interceptor
+ 2. Spring Fileupload
+
+ * 2018-04-17
+ 1. Thread LOcal
+ 2. Docker
+ 3. CTIP
+ 4. Reference architecture
 
 관련 링크
 -------------
