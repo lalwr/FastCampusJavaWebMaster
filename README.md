@@ -48,6 +48,12 @@
 * 규칙
  * 주 1~2회 이상 문제 풀기
  * 매주 수요일 알고리즘 풀이 설명 및 리뷰
+
+* 문제
+ * 유기농배추 : https://www.acmicpc.net/problem/1012
+ * 바이러스 : https://www.acmicpc.net/problem/2606
+ * 1로 만들기 : https://www.acmicpc.net/problem/1463
+ * 비밀지도 : http://codingdojang.com/scode/570?answer_mode=hide
  
 * 관련 링크
  * Big-O 
