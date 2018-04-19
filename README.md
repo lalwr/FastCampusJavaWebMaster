@@ -82,9 +82,8 @@
 | <center>[16회차](https://lalwr.blogspot.kr/2018/04/java-16string.html) </center>  | 
 | <center>[17회차](http://lalwr.blogspot.com/2018/04/java-17.html) </center>  | 
 | <center>[18회차](http://lalwr.blogspot.com/2018/04/java-18docker-viewresolver-profile-ctip.html) </center>  | 
+| <center>[18회차](https://lalwr.blogspot.kr/2018/04/java-19spring-boot-gradle-jpa-querydsl.html) </center>  | 
 
-
- 
 블로그 정리
 -------------
 |  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
@@ -228,6 +227,22 @@
  2. Docker
  3. CTIP
  4. Reference architecture
+
+ * 2018-04-17
+ 1. Thread LOcal
+ 2. Docker
+ 3. CTIP
+ 4. Reference architecture
+
+ * 2018-04-19
+ 1. Spring Boot 2.0
+ 2. Gradle
+ 3. Jpa
+ 4. QueryDSL
+ 5. WEB API, REST API
+ 6. JPQL
+ 7. JOOQ
+ 8. vaadin
 
 관련 링크
 -------------
