@@ -83,6 +83,9 @@
 | <center>[17회차](http://lalwr.blogspot.com/2018/04/java-17.html) </center>  | 
 | <center>[18회차](http://lalwr.blogspot.com/2018/04/java-18docker-viewresolver-profile-ctip.html) </center>  | 
 | <center>[18회차](https://lalwr.blogspot.kr/2018/04/java-19spring-boot-gradle-jpa-querydsl.html) </center>  | 
+| <center>[18회차](https://lalwr.blogspot.kr/2018/04/java-19spring-boot-gradle-jpa-querydsl.html) </center>  | 
+| <center>[19회차](https://lalwr.blogspot.kr/2018/04/java-19spring-boot-gradle-jpa-querydsl.html) </center>  | 
+| <center>[20회차](https://lalwr.blogspot.kr/2018/04/java-20spring-boot-spring-security.html) </center>  | 
 
 블로그 정리
 -------------
@@ -243,6 +246,12 @@
  6. JPQL
  7. JOOQ
  8. vaadin
+
+ * 2018-04-20
+ 1. Spring Boot 2.0
+ 2. Gradle
+ 3. Jpa
+ 4. Spring Security
 
 관련 링크
 -------------
