@@ -90,6 +90,7 @@
 | <center>[19회차](https://lalwr.blogspot.kr/2018/04/java-19spring-boot-gradle-jpa-querydsl.html) </center>  | 
 | <center>[20회차](https://lalwr.blogspot.kr/2018/04/java-20spring-boot-spring-security.html) </center>  | 
 | <center>[21회차](https://lalwr.blogspot.kr/2018/04/java-21jpa-resource-thymeleaf.html) </center>  | 
+| <center>[22회차](https://lalwr.blogspot.kr/2018/04/java-22jpa.html) </center>  | 
 
 블로그 정리
 -------------
@@ -127,6 +128,7 @@
 | JAVA | <center> [ThreadLocal 개념](https://lalwr.blogspot.kr/2018/04/threadlocal.html) </center> | <center>18.04.17 </center> |
 | Docker | <center> [docker에서 mysql 설치](http://lalwr.blogspot.com/2018/04/docker-mysql.html) </center> | <center>18.04.18 </center> |
 | Spring | <center> [Spring Boot 2.0 및 기타 라이브러리](https://lalwr.blogspot.kr/2018/04/spring-boot-20-gradlespring-security.html) </center> | <center>18.04.20 </center> |
+| Thymeleaf | <center> [Thymeleaf 사용법](https://lalwr.blogspot.kr/2018/04/thymeleaf.html) </center> | <center>18.04.20 </center> |
 
 수업
 -------------
@@ -268,6 +270,12 @@
  1. JPA 
  2. Thymeleaf
  3. Resource 
+
+ * 2018-04-26
+ 1. JPA 
+ 2. Thymeleaf
+ 3. Programming이란?
+ 4. Controller 구성 
 
 관련 링크
 -------------
