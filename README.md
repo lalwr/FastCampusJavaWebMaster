@@ -91,6 +91,8 @@
 | <center>[20회차](https://lalwr.blogspot.kr/2018/04/java-20spring-boot-spring-security.html) </center>  | 
 | <center>[21회차](https://lalwr.blogspot.kr/2018/04/java-21jpa-resource-thymeleaf.html) </center>  | 
 | <center>[22회차](https://lalwr.blogspot.kr/2018/04/java-22jpa.html) </center>  | 
+| <center>[23회차](https://lalwr.blogspot.kr/2018/04/java-23spring-boot-http-message.html) </center>  | 
+| <center>[24회차](https://lalwr.blogspot.kr/2018/05/java-24spring-security-filterspring.html) </center>  | 
 
 블로그 정리
 -------------
@@ -275,7 +277,28 @@
  1. JPA 
  2. Thymeleaf
  3. Programming이란?
- 4. Controller 구성 
+ 4. Controller 구성
+
+ * 2018-04-27
+ 1. 로컬작업과 배포
+ 2. HTTP 통신
+ 3. Message Converter
+ 4. Hibernate
+ 5. Spring boot @EnableWebMvc
+ 6. Spring Boot에서 배포
+ 7. error handling
+ 8. spring validation
+ 9. osvi(JPA관련)
+ 10. Scouter(성능 모니터링 툴)
+ 11. Gatling 툴(네트워크 트래픽 공격)
+ 12. OpenEntityManagerInViewFilter(OSIV)
+
+ * 2018-04-30 ~ 2018-05-04
+ 1. Breeak Week
+
+ * 2018-05-07
+ 1. Spring Security Filter
+ 2. Spring Boot Resource
 
 관련 링크
 -------------
