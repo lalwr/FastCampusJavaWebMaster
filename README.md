@@ -132,6 +132,8 @@
 | Docker | <center> [docker에서 mysql 설치](http://lalwr.blogspot.com/2018/04/docker-mysql.html) </center> | <center>18.04.18 </center> |
 | Spring | <center> [Spring Boot 2.0 및 기타 라이브러리](https://lalwr.blogspot.kr/2018/04/spring-boot-20-gradlespring-security.html) </center> | <center>18.04.20 </center> |
 | Thymeleaf | <center> [Thymeleaf 사용법](https://lalwr.blogspot.kr/2018/04/thymeleaf.html) </center> | <center>18.04.20 </center> |
+| Spring | <center> [Spring JPA](https://lalwr.blogspot.kr/2018/05/spring-jpa.html) </center> | <center>18.05.09 </center> |
+| Spring | <center> [스프링에서 검증 @Valid 와 BindingResult](https://lalwr.blogspot.kr/2018/05/valid-bindingresult.html) </center> | <center>18.05.09 </center> |
 
 수업
 -------------
