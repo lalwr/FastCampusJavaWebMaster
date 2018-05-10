@@ -94,6 +94,7 @@
 | <center>[23회차](https://lalwr.blogspot.kr/2018/04/java-23spring-boot-http-message.html) </center>  | 
 | <center>[24회차](https://lalwr.blogspot.kr/2018/05/java-24spring-security-filterspring.html) </center>  | 
 | <center>[25회차](https://lalwr.blogspot.kr/2018/05/java-25jpa-valid.html) </center>  | 
+| <center>[26회차](https://lalwr.blogspot.kr/2018/05/java-26web-api.html) </center>  | 
 
 블로그 정리
 -------------
@@ -304,6 +305,10 @@
  2. Spring Boot Resource
 
  * 2018-05-08
+ 1. Valid 처리
+ 2. JPA개념
+
+ * 2018-05-10
  1. Valid 처리
  2. JPA개념
 
