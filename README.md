@@ -97,6 +97,8 @@
 | <center>[26회차](https://lalwr.blogspot.kr/2018/05/java-26web-api.html) </center>  |
 | <center>[27회차](https://lalwr.blogspot.kr/2018/05/java-27http.html) </center>  |
 | <center>[28회차](https://lalwr.blogspot.kr/2018/05/java-28docer.html) </center>  |
+| <center>[29회차](https://lalwr.blogspot.kr/2018/05/java-29docker.html) </center>  |
+
 블로그 정리
 -------------
 |  <center>CATEGORY</center> |  <center>DESCRIPTION</center> |  <center>DATE</center> | 
@@ -136,6 +138,8 @@
 | Thymeleaf | <center> [Thymeleaf 사용법](https://lalwr.blogspot.kr/2018/04/thymeleaf.html) </center> | <center>18.04.20 </center> |
 | Spring | <center> [Spring JPA](https://lalwr.blogspot.kr/2018/05/spring-jpa.html) </center> | <center>18.05.09 </center> |
 | Spring | <center> [스프링에서 검증 @Valid 와 BindingResult](https://lalwr.blogspot.kr/2018/05/valid-bindingresult.html) </center> | <center>18.05.09 </center> |
+| Docker | <center> [Docker 정리](http://lalwr.blogspot.com/2018/05/docker.html) </center> | <center>18.05.15 </center> |
+
 
 수업
 -------------
@@ -318,6 +322,9 @@
  2. SOCKET
 
  * 2018-05-14
+ 1. Docker
+
+ * 2018-05-15
  1. Docker
 
 관련 링크
