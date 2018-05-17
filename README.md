@@ -98,6 +98,7 @@
 | <center>[27회차](https://lalwr.blogspot.kr/2018/05/java-27http.html) </center>  |
 | <center>[28회차](https://lalwr.blogspot.kr/2018/05/java-28docer.html) </center>  |
 | <center>[29회차](https://lalwr.blogspot.kr/2018/05/java-29docker.html) </center>  |
+| <center>[30회차](https://lalwr.blogspot.kr/2018/05/java-30test.html) </center>  |
 
 블로그 정리
 -------------
@@ -139,7 +140,7 @@
 | Spring | <center> [Spring JPA](https://lalwr.blogspot.kr/2018/05/spring-jpa.html) </center> | <center>18.05.09 </center> |
 | Spring | <center> [스프링에서 검증 @Valid 와 BindingResult](https://lalwr.blogspot.kr/2018/05/valid-bindingresult.html) </center> | <center>18.05.09 </center> |
 | Docker | <center> [Docker 정리](http://lalwr.blogspot.com/2018/05/docker.html) </center> | <center>18.05.15 </center> |
-
+| Spring Test | <center> [Spring boot에서 @SpringBootTest와 @DataJpaTest 차이점](https://lalwr.blogspot.kr/2018/05/spring-boot-springboottest-datajpatest.html) </center> | <center>18.05.17 </center> |
 
 수업
 -------------
@@ -326,6 +327,10 @@
 
  * 2018-05-15
  1. Docker
+
+ * 2018-05-17
+ 1. Spring boot Test
+ 2. Jenkins
 
 관련 링크
 -------------
