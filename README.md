@@ -99,6 +99,7 @@
 | <center>[28회차](https://lalwr.blogspot.kr/2018/05/java-28docer.html) </center>  |
 | <center>[29회차](https://lalwr.blogspot.kr/2018/05/java-29docker.html) </center>  |
 | <center>[30회차](https://lalwr.blogspot.kr/2018/05/java-30test.html) </center>  |
+| <center>[32회차](https://lalwr.blogspot.kr/2018/05/java-32exception.html) </center>  |
 
 블로그 정리
 -------------
@@ -331,6 +332,9 @@
  * 2018-05-17
  1. Spring boot Test
  2. Jenkins
+
+ * 2018-05-21
+ 1. Exception 처리
 
 관련 링크
 -------------
