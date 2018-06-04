@@ -102,6 +102,7 @@
 | <center>[32회차](https://lalwr.blogspot.kr/2018/05/java-32exception.html) </center>  |
 | <center>[35회차](https://lalwr.blogspot.kr/2018/05/java-35test.html) </center>  |
 | <center>[37회차](https://lalwr.blogspot.com/2018/05/java-37rabbitmq-websocket.html) </center>  |
+| <center>[39회차](https://lalwr.blogspot.com/2018/06/java-39jpa.html) </center>  |
 
 블로그 정리
 -------------
@@ -344,6 +345,9 @@
  * 2018-05-31
  1. RabbitMQ
  2. WebSocket(SockJS)
+
+ * 2018-06-04
+ 1. JPA
 
 관련 링크
 -------------
