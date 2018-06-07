@@ -103,6 +103,7 @@
 | <center>[35회차](https://lalwr.blogspot.kr/2018/05/java-35test.html) </center>  |
 | <center>[37회차](https://lalwr.blogspot.com/2018/05/java-37rabbitmq-websocket.html) </center>  |
 | <center>[39회차](https://lalwr.blogspot.com/2018/06/java-39jpa.html) </center>  |
+| <center>[40회차](https://lalwr.blogspot.com/2018/06/java-40.html) </center>  |
 
 블로그 정리
 -------------
@@ -348,6 +349,9 @@
 
  * 2018-06-04
  1. JPA
+
+ * 2018-06-07
+ 1. 기타등등 
 
 관련 링크
 -------------
