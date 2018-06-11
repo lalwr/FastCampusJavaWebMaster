@@ -104,6 +104,7 @@
 | <center>[37회차](https://lalwr.blogspot.com/2018/05/java-37rabbitmq-websocket.html) </center>  |
 | <center>[39회차](https://lalwr.blogspot.com/2018/06/java-39jpa.html) </center>  |
 | <center>[40회차](https://lalwr.blogspot.com/2018/06/java-40.html) </center>  |
+| <center>[41회차](https://lalwr.blogspot.com/2018/06/java-41apm.html) </center>  |
 
 블로그 정리
 -------------
@@ -352,6 +353,9 @@
 
  * 2018-06-07
  1. 기타등등 
+
+ * 2018-06-11
+ 1. 모니터링툴과 운영
 
 관련 링크
 -------------
